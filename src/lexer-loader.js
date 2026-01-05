@@ -5,6 +5,7 @@ const parser = new XMLParser({
   ignoreAttributes: false,
   attributeNamePrefix: '',
   textNodeName: '#text',
+  trimValues: false,
 });
 
 /**
