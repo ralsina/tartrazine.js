@@ -1,0 +1,14 @@
+[
+  {
+    "type": "Name",
+    "value": "help"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "sin"
+  }
+]

@@ -1,0 +1,1 @@
+sum by (app, proc) (instance_memory_usage_bytes)

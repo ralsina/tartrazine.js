@@ -1,0 +1,50 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "delta"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "cpu_temp_celsius"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameLabel",
+    "value": "host"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "zeus"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\"}["
+  },
+  {
+    "type": "LiteralString",
+    "value": "2h"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "type": "Keyword",
+    "value": "struct"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameClass",
+    "value": "X"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Text",
+    "value": ": "
+  },
+  {
+    "type": "KeywordType",
+    "value": "u32"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  }
+]

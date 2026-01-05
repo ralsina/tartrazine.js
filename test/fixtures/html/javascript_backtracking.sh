@@ -1,0 +1,35 @@
+<script type="text/javascript">
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+alert("hi");
+// Note the missing </script> tag; this should not cause catastrophic backtracking

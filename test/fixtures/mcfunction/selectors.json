@@ -1,0 +1,210 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "execute"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "as"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "advancements"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n            "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "minecraft:story/form_obsidian"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "foo"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "true"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "bar"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "false"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n            "
+  },
+  {
+    "type": "Punctuation",
+    "value": "},"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n            "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "minecraft:story/follow_ender_eye"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "foo"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "false"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "bar"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "true"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n            "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "run"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "\n        say"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "this"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "command"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "is"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "nuts"
+  }
+]

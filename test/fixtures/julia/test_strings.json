@@ -1,0 +1,402 @@
+[
+  {
+    "type": "LiteralString",
+    "value": "\"global function\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"An "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$interpolated"
+  },
+  {
+    "type": "LiteralString",
+    "value": " variable\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"An "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "LiteralString",
+    "value": " expression\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\"\"a\"\"\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\"\"\nglobal function\nde e f\n\"inner string\"\n\"\"\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "raw"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\\\\ a "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralString",
+    "value": " $interp $(1 + 1) "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "raw"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\"\"\n\"inner string\"\n$interp\n$(1 + 1)\n\"\"\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "# commented \"string\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@sprintf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "%0.2f"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "var"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "v"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"1.0\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "var"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"#nonstandard#\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "r"
+  },
+  {
+    "type": "LiteralStringRegex",
+    "value": "\"^[abs]+$\""
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "m"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "arbi"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"trary\""
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "suff"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "arbi"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"trary\""
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "1234"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`global function`"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`abc "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\`"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\$"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$interpolated"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`abc "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "```a```"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "```\nglobal function\n\"thing\" ` "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\$"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "\n`now` "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "now"
+  },
+  {
+    "type": "Punctuation",
+    "value": "())"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "\n```"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "# commented `command`"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "arbi"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`trary`"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "suff"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "arbi"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "`trary`"
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "1234"
+  }
+]

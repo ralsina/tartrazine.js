@@ -1,0 +1,42 @@
+[
+  {
+    "type": "KeywordDeclaration",
+    "value": "signal"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "sig"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "arg1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "arg2"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "type": "Comment",
+    "value": "% BibTeX standard bibliography style `plain'"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "INTEGERS { output.state before.all }"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "FUNCTION {sort.format.title}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "{ 't :="
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "\"A \" #2"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Comment",
+    "value": "\"An \" #3"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Comment",
+    "value": "\"The \" #4 t chop.word"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Comment",
+    "value": "chop.word"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "chop.word"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "sortify"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "#1 global.max$ substring$"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "ITERATE {call.type$}"
+  }
+]

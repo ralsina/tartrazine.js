@@ -1,0 +1,14 @@
+[
+  {
+    "type": "Keyword",
+    "value": "import"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameNamespace",
+    "value": "a.b.c"
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Adder flops the sum of its inputs\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "module"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "Adder"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "#("
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "parameter"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "int"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "N"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "42"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "output"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "logic"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "Name",
+    "value": "N"
+  },
+  {
+    "type": "Operator",
+    "value": "-"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "y"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "output"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "logic"
+  },
+  {
+    "type": "Text",
+    "value": "         "
+  },
+  {
+    "type": "Name",
+    "value": "co"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": "\n\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "input"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "Keyword",
+    "value": "logic"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "Name",
+    "value": "N"
+  },
+  {
+    "type": "Operator",
+    "value": "-"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "input"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "Keyword",
+    "value": "logic"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "Name",
+    "value": "N"
+  },
+  {
+    "type": "Operator",
+    "value": "-"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "input"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "Keyword",
+    "value": "logic"
+  },
+  {
+    "type": "Text",
+    "value": "         "
+  },
+  {
+    "type": "Name",
+    "value": "ci"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": "\n\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "input"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "Keyword",
+    "value": "logic"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "clk"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": ");"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "always_ff"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "@("
+  },
+  {
+    "type": "Keyword",
+    "value": "posedge"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "clk"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "begin"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Name",
+    "value": "co"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "y"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "<="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "ci"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "endmodule"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "Adder"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

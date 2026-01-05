@@ -1,0 +1,322 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "data"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "modify"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "storage"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "my:storage"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "root"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "set"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "value"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "key"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"This NBT Compound is multiple lines\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Count"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "10"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "b"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "tags"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "],"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "UUID"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "tellraw"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "\"text\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"how ever\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "\"color\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"blue\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "\"extra\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "\"this"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "is"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "json"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "o_O\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

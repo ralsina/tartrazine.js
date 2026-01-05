@@ -1,0 +1,66 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "NameTag",
+    "value": "script"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "type"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"text/javascript\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "alert"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"hi\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ");"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "</"
+  },
+  {
+    "type": "NameTag",
+    "value": "script"
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  }
+]

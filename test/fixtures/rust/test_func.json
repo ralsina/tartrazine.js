@@ -1,0 +1,58 @@
+[
+  {
+    "type": "Keyword",
+    "value": "fn"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "func"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Text",
+    "value": ": "
+  },
+  {
+    "type": "KeywordType",
+    "value": "u32"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Text",
+    "value": "-> "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "None"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  }
+]

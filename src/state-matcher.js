@@ -100,6 +100,14 @@ export class StateMatcher {
     const rules = this.getCompiledRules(stateDef.name);
 
     for (const rule of rules) {
+      // If regex is null, this is a zero-length match rule
+      if (rule.regex === null) {
+        return {
+          match: [''], // Zero-length match
+          rule
+        };
+      }
+
       const regex = rule.regex;
       const match = this.regexEngine.match(regex, text, position);
 
@@ -126,13 +134,51 @@ export class StateMatcher {
       return [];
     }
 
-    const compiled = stateDef.rules.map((rule) => ({
-      regex: this.regexEngine.compile(rule.pattern),
-      actions: rule.actions,
-    }));
+    // Expand rules with includes
+    const compiled = this.expandRules(stateDef.rules, new Set());
 
     this.compiledRules.set(stateName, compiled);
     return compiled;
+  }
+
+  /**
+   * Expand rules, resolving includes recursively
+   * @param {Array} rules - Rules to expand
+   * @param {Set} visited - States already visited (to prevent infinite recursion)
+   * @returns {Array} Expanded compiled rules
+   */
+  expandRules(rules, visited) {
+    const expanded = [];
+
+    for (const rule of rules) {
+      // First, process any include actions in this rule
+      const includeActions = rule.actions.filter(a => a.type === 'include');
+      const nonIncludeActions = rule.actions.filter(a => a.type !== 'include');
+
+      // Expand includes from referenced states
+      for (const includeAction of includeActions) {
+        const includedState = this.lexerDef.states[includeAction.state];
+        if (includedState) {
+          // Prevent infinite recursion
+          if (!visited.has(includeAction.state)) {
+            visited.add(includeAction.state);
+            const includedRules = this.expandRules(includedState.rules, visited);
+            expanded.push(...includedRules);
+          }
+        }
+      }
+
+      // If there's a pattern and non-include actions, compile and add the rule
+      // If there's no pattern, it's a zero-length match rule (should match at any position)
+      if (nonIncludeActions.length > 0) {
+        expanded.push({
+          regex: rule.pattern ? this.regexEngine.compile(rule.pattern) : null,
+          actions: rule.actions,
+        });
+      }
+    }
+
+    return expanded;
   }
 
   /**
@@ -152,19 +198,50 @@ export class StateMatcher {
         });
         break;
 
+      case 'bygroups':
+        // Create one token per capture group
+        // match[0] is the full match, match[1] is first group, etc.
+        for (let i = 0; i < action.groups.length; i++) {
+          const groupAction = action.groups[i];
+          const groupIndex = i + 1; // match[0] is full match, groups start at 1
+
+          if (groupIndex < match.length && match[groupIndex] !== undefined) {
+            // Skip empty groups (e.g., optional whitespace that didn't match)
+            if (match[groupIndex] !== '') {
+              // If groupAction is usingself, recursively tokenize the matched text
+              if (groupAction.type === 'usingself') {
+                const recursiveTokens = this.tokenize(match[groupIndex], groupAction.state);
+                tokens.push(...recursiveTokens);
+              } else if (groupAction.type === 'token') {
+                tokens.push({
+                  type: groupAction.tokenType,
+                  value: match[groupIndex],
+                });
+              }
+            }
+          }
+        }
+        break;
+
       case 'push':
-        // Phase 2: Implement push
-        console.warn('Push action not yet implemented');
+        // Push state onto stack
+        if (action.state && action.state !== '#pop') {
+          stateStack.push(action.state);
+        }
         break;
 
       case 'pop':
-        // Phase 2: Implement pop
-        console.warn('Pop action not yet implemented');
+        // Pop specified number of states from stack
+        const depth = action.depth || 1;
+        const toPop = Math.min(depth, stateStack.length - 1);
+        for (let i = 0; i < toPop; i++) {
+          stateStack.pop();
+        }
         break;
 
       case 'include':
-        // Phase 2: Implement include
-        console.warn('Include action not yet implemented');
+        // Include is handled during rule compilation
+        // No action needed here
         break;
 
       default:

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Keyword",
+    "value": "package"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameNamespace",
+    "value": "p1.p2"
+  },
+  {
+    "type": "Keyword",
+    "value": ":"
+  }
+]

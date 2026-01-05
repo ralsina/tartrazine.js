@@ -1,0 +1,30 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": ";; Test string escapes"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"basic string\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"Strings can\n   span several\n\n          lines.\n                 \""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"Escapes:\n  \\\"\n  \\\\\n  \\|\n  \\a\n  \\f\n  \\n\n  \\r\n  \\t\n  \\v\n  \\b\n  \\0\n  \\(\n  \\\n  \\x125612;    (R6RS-style)\n  \\x13         (Guile-style)\n  \\u1234\n  \\U123456\n\""
+  }
+]

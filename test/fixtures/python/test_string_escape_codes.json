@@ -1,0 +1,62 @@
+[
+  {
+    "type": "LiteralStringSingle",
+    "value": "'"
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\\"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\n"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\x12"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\777"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\u1234"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\U00010348"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\N{Plus-Minus Sign}"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "'"
+  }
+]

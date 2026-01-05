@@ -1,0 +1,22 @@
+[
+  {
+    "type": "LiteralNumber",
+    "value": "7"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "% and %"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "8"
+  }
+]

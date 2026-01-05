@@ -4,8 +4,11 @@
   "description": "JavaScript port of tartrazine syntax highlighting library",
   "type": "module",
   "scripts": {
-    "test": "vitest",
-    "test:watch": "vitest --watch"
+    "test": "node scripts/run-tests.js",
+    "test:watch": "vitest --watch",
+    "sync-lexers": "node scripts/sync-lexers.js",
+    "import-tests": "node scripts/import-tartrazine-tests.js",
+    "import-tests:all": "node scripts/import-tartrazine-tests.js all"
   },
   "devDependencies": {
     "vitest": "^2.1.0"

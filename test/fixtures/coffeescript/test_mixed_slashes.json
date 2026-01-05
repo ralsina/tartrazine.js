@@ -1,0 +1,34 @@
+[
+  {
+    "type": "NameOther",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "?"
+  },
+  {
+    "type": "LiteralStringRegex",
+    "value": "/foo/"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

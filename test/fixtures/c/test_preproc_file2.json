@@ -1,0 +1,18 @@
+[
+  {
+    "type": "CommentPreproc",
+    "value": "#include"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentPreprocFile",
+    "value": "\"foo.h\""
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "\n#    include \"foo.h\"\n"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "type": "Name",
+    "value": "and"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "and_eq"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "bitand"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "bitor"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "compl"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "not"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "not_eq"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "or"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "or_eq"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "xor"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "xor_eq"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

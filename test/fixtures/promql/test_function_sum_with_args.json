@@ -1,0 +1,58 @@
+[
+  {
+    "type": "Keyword",
+    "value": "sum"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "by"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "app"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "proc"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "instance_memory_usage_bytes"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  }
+]

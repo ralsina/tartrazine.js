@@ -1,0 +1,58 @@
+[
+  {
+    "type": "Error",
+    "value": "alice"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "6"
+  },
+  {
+    "type": "Error",
+    "value": "f"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "6e4241"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "-75"
+  },
+  {
+    "type": "Error",
+    "value": "a"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2-4780-9"
+  },
+  {
+    "type": "Error",
+    "value": "b"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Error",
+    "value": "a"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "-40"
+  },
+  {
+    "type": "Error",
+    "value": "da"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "53082e54"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Keyword",
+    "value": "sum"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "rate"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "metric_test_app"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameLabel",
+    "value": "app"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "LiteralString",
+    "value": "turtle"
+  },
+  {
+    "type": "Punctuation",
+    "value": "',"
+  },
+  {
+    "type": "NameLabel",
+    "value": "proc"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "LiteralString",
+    "value": "web"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'}["
+  },
+  {
+    "type": "LiteralString",
+    "value": "2m"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Operator",
+    "value": "))"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "by"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "node"
+  },
+  {
+    "type": "Operator",
+    "value": "))"
+  }
+]

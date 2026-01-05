@@ -1,0 +1,626 @@
+[
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "'b10101010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "'b10101010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "10101010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "sb10101010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "Sb10101010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "B10101010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "'b1010"
+  },
+  {
+    "type": "Name",
+    "value": "_1010"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "'b10"
+  },
+  {
+    "type": "Name",
+    "value": "xXzZ"
+  },
+  {
+    "type": "Operator",
+    "value": "?"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "10"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "'o01234567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "'o01234567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "o"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "01234567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "so01234567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "So01234567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "O01234567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "'o0123"
+  },
+  {
+    "type": "Name",
+    "value": "_4567"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "24"
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "'o01"
+  },
+  {
+    "type": "Name",
+    "value": "xXzZ"
+  },
+  {
+    "type": "Operator",
+    "value": "?"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "7"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "'d27182818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "'d27182818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "d"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "27182818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "sd27182818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "Sd27182818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "D27182818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "'d2718"
+  },
+  {
+    "type": "Name",
+    "value": "_2818"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "'d27"
+  },
+  {
+    "type": "Name",
+    "value": "xXzZ"
+  },
+  {
+    "type": "Operator",
+    "value": "?"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "8"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32'hdeadbeef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "'hdeadbeef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "h"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "deadbeef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "shdeadbeef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "Shdeadbeef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "Hdeadbeef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32'hdead"
+  },
+  {
+    "type": "Name",
+    "value": "_beef"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "32'hde"
+  },
+  {
+    "type": "Name",
+    "value": "xXzZ"
+  },
+  {
+    "type": "Operator",
+    "value": "?"
+  },
+  {
+    "type": "Name",
+    "value": "f"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "'0"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "'1"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "'x"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "X"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "'z"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "Name",
+    "value": "Z"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "42"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "1234"
+  },
+  {
+    "type": "Name",
+    "value": "_5678"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

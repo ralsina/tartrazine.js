@@ -1,0 +1,1 @@
+go_gc_duration_seconds{instance="localhost:9090"}

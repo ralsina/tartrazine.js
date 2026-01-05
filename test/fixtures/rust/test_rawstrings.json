@@ -1,0 +1,302 @@
+[
+  {
+    "type": "Keyword",
+    "value": "fn"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "main"
+  },
+  {
+    "type": "Punctuation",
+    "value": "()"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "let"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "raw_str"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "r"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"Escapes don't work\n\n    here: \\x3F \\u{211D}\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameFunctionMagic",
+    "value": "println!"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "{}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "raw_str"
+  },
+  {
+    "type": "Punctuation",
+    "value": ");"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n    "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "// If you need quotes in a raw string, add a pair of #s\n"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "    "
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "let"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "quotes"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "r"
+  },
+  {
+    "type": "LiteralString",
+    "value": "#\"And then I said:\n\n    \"There is no escape!\"\"#"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameFunctionMagic",
+    "value": "println!"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "{}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "quotes"
+  },
+  {
+    "type": "Punctuation",
+    "value": ");"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n    "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "// If you need \"# in your string, just use more #s in the delimiter.\n"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "    "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "// There is no limit for the number of #s you can use.\n"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "    "
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "let"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "longer_delimiter"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringAffix",
+    "value": "r"
+  },
+  {
+    "type": "LiteralString",
+    "value": "###\"A string\n    with \"# in it. And even \"##!\"###"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "NameFunctionMagic",
+    "value": "println!"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "{}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "longer_delimiter"
+  },
+  {
+    "type": "Punctuation",
+    "value": ");"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  }
+]

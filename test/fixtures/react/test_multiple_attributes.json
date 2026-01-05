@@ -1,0 +1,66 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "NameTag",
+    "value": "User"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "name"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "'john'"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "last"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "'doe'"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "/>"
+  }
+]

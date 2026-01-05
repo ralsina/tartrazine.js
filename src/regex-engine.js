@@ -74,7 +74,21 @@ export class RegexEngine {
 
       // Convert to JavaScript RegExp using oniguruma-to-es
       const regex = toRegExp(cleanPattern, options);
-      return new RegExp(regex.source, jsFlags);
+
+      // Use the regex from oniguruma-to-es directly (it has 'v' flag for Unicode)
+      // Just add our custom flags (i, m, s) if not already present
+      let finalFlags = regex.flags;
+      if (jsFlags.includes('i') && !finalFlags.includes('i')) {
+        finalFlags += 'i';
+      }
+      if (jsFlags.includes('m') && !finalFlags.includes('m')) {
+        finalFlags += 'm';
+      }
+      if (jsFlags.includes('s') && !finalFlags.includes('s')) {
+        finalFlags += 's';
+      }
+
+      return new RegExp(regex.source, finalFlags);
     } catch (error) {
       throw new Error(`Failed to compile pattern "${pattern}": ${error.message}`);
     }
@@ -88,8 +102,18 @@ export class RegexEngine {
    * @returns {Match|null} Match result or null if no match
    */
   match(regex, text, startOffset = 0) {
-    regex.lastIndex = startOffset;
-    return regex.exec(text);
+    // Extract substring from startOffset and match
+    const substring = text.substring(startOffset);
+    const result = regex.exec(substring);
+
+    if (!result) {
+      return null;
+    }
+
+    // Adjust the index to be relative to the original text
+    result.index = result.index + startOffset;
+
+    return result;
   }
 
   /**

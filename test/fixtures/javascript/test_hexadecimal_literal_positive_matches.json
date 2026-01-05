@@ -1,0 +1,34 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test literals that should be tokenized as hexadecimal literals.\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0x01"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0Xef"
+  },
+  {
+    "type": "NameOther",
+    "value": "n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0x0EF"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

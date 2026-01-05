@@ -1,0 +1,14 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "! a comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# also a comment"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "@"
+  },
+  {
+    "type": "Name",
+    "value": "import"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "ModuleA"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

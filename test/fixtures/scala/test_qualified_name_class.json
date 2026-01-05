@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Name",
+    "value": "C"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "type": "Comment",
+    "value": "# Alt and arrow keys to scroll\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "set"
+  },
+  {
+    "type": "Text",
+    "value": " scroll_amount "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "bind"
+  },
+  {
+    "type": "Text",
+    "value": " Text "
+  },
+  {
+    "type": "Operator",
+    "value": "<"
+  },
+  {
+    "type": "Text",
+    "value": "Alt-Up"
+  },
+  {
+    "type": "Operator",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "NameVariable",
+    "value": "W"
+  },
+  {
+    "type": "Text",
+    "value": " yview scroll "
+  },
+  {
+    "type": "Operator",
+    "value": "-"
+  },
+  {
+    "type": "NameVariable",
+    "value": "$scroll_amount"
+  },
+  {
+    "type": "Text",
+    "value": " units\n    "
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "NameVariable",
+    "value": "W"
+  },
+  {
+    "type": "Text",
+    "value": " mark set insert "
+  },
+  {
+    "type": "Error",
+    "value": "@"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": ","
+  },
+  {
+    "type": "Keyword",
+    "value": "[expr"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "["
+  },
+  {
+    "type": "NameVariable",
+    "value": "winfo"
+  },
+  {
+    "type": "Text",
+    "value": " height "
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "Text",
+    "value": "W"
+  },
+  {
+    "type": "Keyword",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Keyword",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "bind"
+  },
+  {
+    "type": "Text",
+    "value": " Text "
+  },
+  {
+    "type": "Operator",
+    "value": "<"
+  },
+  {
+    "type": "Text",
+    "value": "Alt-Down"
+  },
+  {
+    "type": "Operator",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "NameVariable",
+    "value": "W"
+  },
+  {
+    "type": "Text",
+    "value": " yview scroll "
+  },
+  {
+    "type": "NameVariable",
+    "value": "$scroll_amount"
+  },
+  {
+    "type": "Text",
+    "value": " units\n    "
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "NameVariable",
+    "value": "W"
+  },
+  {
+    "type": "Text",
+    "value": " mark set insert "
+  },
+  {
+    "type": "Error",
+    "value": "@"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": ","
+  },
+  {
+    "type": "Keyword",
+    "value": "[expr"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "["
+  },
+  {
+    "type": "NameVariable",
+    "value": "winfo"
+  },
+  {
+    "type": "Text",
+    "value": " height "
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "Text",
+    "value": "W"
+  },
+  {
+    "type": "Keyword",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Keyword",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "}"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "Include"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringOther",
+    "value": "/etc/httpd/conf.d/"
+  },
+  {
+    "type": "Text",
+    "value": "*.conf"
+  }
+]

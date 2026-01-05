@@ -1,0 +1,334 @@
+[
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# single character variable"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "a_simple_name"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "_leading_underscore"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5"
+  },
+  {
+    "type": "Name",
+    "value": "implicit_mul"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "6"
+  },
+  {
+    "type": "Name",
+    "value": "_more_mul"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "nums1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "nums_2"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "nameswith!"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "multiple!!"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "embedded!_inthemiddle"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "embed!1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "prime_suffix′"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "for_each"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# starts with keyword substring"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "# variables with characters > \\u00A1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "ð"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Ll"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "Aʺ"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Lm -- \\U02BA (MODIFIER LETTER DOUBLE PRIME), not \\U2033 (DOUBLE PRIME)"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "א"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Lo"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "Ð"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Lu"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "A̅"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Mn -- \\U0305 (COMBINING OVERLINE)"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "ⅿ"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Nl -- \\U217F (SMALL ROMAN NUMERAL ONE THOUSAND)"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "A₁"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category No"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "A²"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category No"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "€"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Sc"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "©"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category So"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "# number-like names"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "𝟙"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Nd"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "𝟏"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# category Nd"
+  }
+]

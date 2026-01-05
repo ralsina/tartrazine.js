@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "NameOperator",
+    "value": "=="
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "4"
+  }
+]

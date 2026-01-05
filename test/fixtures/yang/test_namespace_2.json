@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Keyword",
+    "value": "type"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordNamespace",
+    "value": "yang"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": "counter64"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

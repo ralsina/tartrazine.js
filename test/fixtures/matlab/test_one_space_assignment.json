@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "100"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

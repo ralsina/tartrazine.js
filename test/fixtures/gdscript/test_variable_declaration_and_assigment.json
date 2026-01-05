@@ -1,0 +1,30 @@
+[
+  {
+    "type": "KeywordDeclaration",
+    "value": "var"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "abc"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "5.4"
+  }
+]

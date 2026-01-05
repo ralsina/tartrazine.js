@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "NameTag",
+    "value": "React.Fragment"
+  },
+  {
+    "type": "Punctuation",
+    "value": "></"
+  },
+  {
+    "type": "NameTag",
+    "value": "React.Fragment"
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  }
+]

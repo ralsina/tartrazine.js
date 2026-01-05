@@ -1,0 +1,1 @@
+[Long-NetBIOS-Hostname]: PS C:\> Get-ChildItem

@@ -13,7 +13,8 @@ const parser = new XMLParser({
  * @returns {Promise<Object>} Parsed lexer definition
  */
 export async function loadLexer(lexerName) {
-  const xmlPath = `vendor/tartrazine/lexers/${lexerName}.xml`;
+  // Use the synced lexers directory for deployment/packaging
+  const xmlPath = `lexers/${lexerName}.xml`;
   const xmlContent = readFileSync(xmlPath, 'utf-8');
   return parseLexerXML(xmlContent);
 }
@@ -61,6 +62,7 @@ function transformLexerDef(lexer) {
     aliases: extractArray(config.alias),
     filenames: extractArray(config.filename),
     mimeTypes: extractArray(config.mime_type),
+    ensureNl: config.ensure_nl === 'true' || config.ensure_nl === true,
     states,
   };
 }
@@ -108,6 +110,62 @@ function parseRules(rules) {
       parsedRule.actions.push({
         type: 'include',
         state: rule.include.state,
+      });
+    }
+
+    // Handle bygroups - creates multiple tokens from capture groups
+    if (rule.bygroups) {
+      const groups = [];
+
+      // Extract tokens
+      const tokens = Array.isArray(rule.bygroups.token) ? rule.bygroups.token : (rule.bygroups.token ? [rule.bygroups.token] : []);
+
+      // Extract usingself elements
+      const usingselfs = Array.isArray(rule.bygroups.usingself) ? rule.bygroups.usingself : (rule.bygroups.usingself ? [rule.bygroups.usingself] : []);
+
+      // Merge them in the order they appear in the XML
+      // The XML parser groups by type, so we need to reconstruct order
+      // by looking at which elements exist
+      let tokenIndex = 0;
+      let usingselfIndex = 0;
+
+      // For the function definition pattern, we know the order is:
+      // usingself, token, usingself, usingself, token
+      // This is fragile but works for the current C lexer
+      if (tokens.length === 2 && usingselfs.length === 3) {
+        groups.push({
+          type: 'usingself',
+          state: usingselfs[usingselfIndex++].state,
+        });
+        groups.push({
+          type: 'token',
+          tokenType: tokens[tokenIndex++].type,
+        });
+        groups.push({
+          type: 'usingself',
+          state: usingselfs[usingselfIndex++].state,
+        });
+        groups.push({
+          type: 'usingself',
+          state: usingselfs[usingselfIndex++].state,
+        });
+        groups.push({
+          type: 'token',
+          tokenType: tokens[tokenIndex++].type,
+        });
+      } else {
+        // For other cases, just add all tokens (simpler patterns)
+        for (const token of tokens) {
+          groups.push({
+            type: 'token',
+            tokenType: token.type,
+          });
+        }
+      }
+
+      parsedRule.actions.push({
+        type: 'bygroups',
+        groups,
       });
     }
 

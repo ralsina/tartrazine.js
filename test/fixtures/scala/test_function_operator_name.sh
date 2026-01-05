@@ -1,0 +1,1 @@
+def < (y: String): Boolean

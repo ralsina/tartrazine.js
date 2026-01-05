@@ -1,0 +1,34 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "echo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameVariable",
+    "value": "a"
+  },
+  {
+    "type": "Punctuation",
+    "value": "//["
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "]/"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  }
+]

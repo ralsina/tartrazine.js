@@ -1,0 +1,526 @@
+[
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "Get:"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "#rx.playerdb:api/v2/get"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@input"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "  "
+  },
+  {
+    "type": "NameVariableMagic",
+    "value": "$in.uid"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "rx.io"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@output"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "  "
+  },
+  {
+    "type": "NameFunction",
+    "value": "rx.playerdb:io"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "player"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "Selects"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "data"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "inside"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "the"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "database"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "and"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "copies"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "to"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "rx.playerdb:io"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "player"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "See"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "#api/v2/select"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "for"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "more"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "info.."
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#*"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "Note:"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "something,"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "something,"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "this"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "is"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "important.."
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "\n#"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "Normal"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "Comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "\n#"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "This"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "**shouldn't**"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "be"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "comment.."
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "scoreboard"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "players"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "operation"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@s"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "obj"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariableMagic",
+    "value": "#fakeplayer"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "obj"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "single"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "line"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "block"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "tellraw"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"This string # has # hashtags o_O\""
+  }
+]

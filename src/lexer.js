@@ -34,10 +34,17 @@ export class Lexer {
   async tokenize(text, options = {}) {
     await this.init();
 
+    // Respect the `ensure_nl` config option
+    // If text doesn't end with newline and ensure_nl is true, append one
+    let textToTokenize = text;
+    if (this.lexerDef.ensureNl && textToTokenize.length > 0 && textToTokenize[textToTokenize.length - 1] !== '\n') {
+      textToTokenize = textToTokenize + '\n';
+    }
+
     // Tartrazine always starts in 'root' state
     const initialState = options.state || 'root';
     const matcher = new StateMatcher(this.lexerDef);
-    return matcher.tokenize(text, initialState);
+    return matcher.tokenize(textToTokenize, initialState);
   }
 
   /**

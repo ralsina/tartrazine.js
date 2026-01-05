@@ -1,0 +1,198 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "label_replace"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "sum"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "by"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "instance"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "irate"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "node_disk_read_bytes_total"
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "LiteralString",
+    "value": "2m"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1024"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1024"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "device"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "LiteralString",
+    "value": "disk"
+  },
+  {
+    "type": "Punctuation",
+    "value": "',"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "instance"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": ".*"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  }
+]

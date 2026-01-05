@@ -1,0 +1,62 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "PS "
+  },
+  {
+    "type": "Name",
+    "value": "C:"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\\>"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "Get-ChildItem"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Name",
+    "value": "PS"
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "Get-ChildItem"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "PS "
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "Get-ChildItem"
+  }
+]

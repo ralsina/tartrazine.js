@@ -1,0 +1,22 @@
+[
+  {
+    "type": "KeywordConstant",
+    "value": "true"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "false"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "null"
+  }
+]

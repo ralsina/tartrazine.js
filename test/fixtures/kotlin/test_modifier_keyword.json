@@ -1,0 +1,54 @@
+[
+  {
+    "type": "Keyword",
+    "value": "data"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "class"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameClass",
+    "value": "A"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Keyword",
+    "value": "val"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameProperty",
+    "value": "data"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "String"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

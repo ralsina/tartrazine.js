@@ -1,0 +1,14 @@
+[
+  {
+    "type": "NameVariable",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "$'abc\\''"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "type": "Name",
+    "value": "String"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "source"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\"\"\npublic class Quine {\n\tpublic static void main(String[] args) {\n\t\tString textBlockQuotes = new String(new char[]{'\"', '\"', '\"'});\n\t\tchar newLine = 10;\n\t\tString teststringinside = \"hello my name is...\\n\\r\";\n\t\tString source = %s;\n\t\tSystem.out.println(source.formatted(textBlockQuotes + newLine + source + textBlockQuotes));\n\t}\n}\n\"\"\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

@@ -1,0 +1,558 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": ";; All sorts of numbers, common and less common."
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "142"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "-142"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "+142"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "-0.5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "+0"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "-0.5"
+  },
+  {
+    "type": "NameVariable",
+    "value": "e-10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "+0"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5"
+  },
+  {
+    "type": "NameVariable",
+    "value": "e10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0.5"
+  },
+  {
+    "type": "NameVariable",
+    "value": "e+10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5"
+  },
+  {
+    "type": "NameVariable",
+    "value": "F+10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "123"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "123"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "123"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "NameVariable",
+    "value": "L-25|54"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "+inf"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "-inf"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "b+nan"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameVariable",
+    "value": "-inf"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1-2"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "NameVariable",
+    "value": "-i"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "+i"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "-5"
+  },
+  {
+    "type": "NameVariable",
+    "value": "f24@3"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "14159"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "4"
+  },
+  {
+    "type": "NameVariable",
+    "value": "/5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "5.4"
+  },
+  {
+    "type": "NameVariable",
+    "value": "e5@4"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "o5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "o5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "o"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i5"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "b01/10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "x0f42a"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "E"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "b01/10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "d"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "I01/10"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i-324@3"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "14159"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "o"
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": "I01/1022-inf"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": ";; These are not numbers but plain symbols."
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "NameVariable",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "NameVariable",
+    "value": "-"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "inf"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "-inf"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "nan"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "-nan"
+  }
+]

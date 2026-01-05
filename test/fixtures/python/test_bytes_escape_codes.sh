@@ -1,0 +1,1 @@
+b'\\ \n \x12 \777 \u1234 \U00010348 \N{Plus-Minus Sign}'

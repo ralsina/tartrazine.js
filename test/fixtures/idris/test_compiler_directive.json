@@ -1,0 +1,42 @@
+[
+  {
+    "type": "OperatorWord",
+    "value": "%"
+  },
+  {
+    "type": "Text",
+    "value": "link "
+  },
+  {
+    "type": "KeywordType",
+    "value": "C"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"object.o\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "OperatorWord",
+    "value": "%"
+  },
+  {
+    "type": "Text",
+    "value": "name "
+  },
+  {
+    "type": "KeywordType",
+    "value": "Vect"
+  },
+  {
+    "type": "Text",
+    "value": " xs"
+  }
+]

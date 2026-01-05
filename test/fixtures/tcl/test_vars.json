@@ -1,0 +1,66 @@
+[
+  {
+    "type": "Keyword",
+    "value": "set"
+  },
+  {
+    "type": "Text",
+    "value": " size "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "10"
+  },
+  {
+    "type": "Keyword",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "puts"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "$"
+  },
+  {
+    "type": "Keyword",
+    "value": "{"
+  },
+  {
+    "type": "NameVariable",
+    "value": "size"
+  },
+  {
+    "type": "Keyword",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "x"
+  },
+  {
+    "type": "Error",
+    "value": "$"
+  },
+  {
+    "type": "Keyword",
+    "value": "{"
+  },
+  {
+    "type": "NameVariable",
+    "value": "size"
+  },
+  {
+    "type": "Keyword",
+    "value": "}"
+  }
+]

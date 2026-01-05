@@ -1,0 +1,18 @@
+[
+  {
+    "type": "NameTag",
+    "value": "foo:bar"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Literal",
+    "value": "value"
+  }
+]

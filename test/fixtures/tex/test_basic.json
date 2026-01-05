@@ -1,0 +1,290 @@
+[
+  {
+    "type": "Keyword",
+    "value": "\\documentclass"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "article"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "% Comment\n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\ExplSyntaxOn"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\@"
+  },
+  {
+    "type": "Text",
+    "value": "@"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "_"
+  },
+  {
+    "type": "Text",
+    "value": "command:nTF "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": " a "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": " b "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": " c "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\ExplSyntaxOff"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\makeatletter"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\def\\example"
+  },
+  {
+    "type": "Text",
+    "value": "@command"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "example"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\makeatother"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\begin"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "document"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\ntext "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\LaTeX"
+  },
+  {
+    "type": "Text",
+    "value": ": text "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\"
+  },
+  {
+    "type": "Text",
+    "value": "\n\ntext "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\example"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{}"
+  },
+  {
+    "type": "Text",
+    "value": "[] text "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\\\"
+  },
+  {
+    "type": "Text",
+    "value": "\n\ntext "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\example"
+  },
+  {
+    "type": "Text",
+    "value": " text. ``quote''; "
+  },
+  {
+    "type": "Keyword",
+    "value": "\\1"
+  },
+  {
+    "type": "Text",
+    "value": "23"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\%"
+  },
+  {
+    "type": "Text",
+    "value": " and: text.\n\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "$"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "_i"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\in\\{\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": ":"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha\\leq"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "3"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\}\\ \\text"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{something}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "$"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "\\end"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "document"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "}"
+  }
+]

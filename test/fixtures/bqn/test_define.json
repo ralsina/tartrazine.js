@@ -1,0 +1,130 @@
+[
+  {
+    "type": "KeywordPseudo",
+    "value": "⟨"
+  },
+  {
+    "type": "Name",
+    "value": "alias"
+  },
+  {
+    "type": "Text",
+    "value": "⇐"
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "⟩"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Text",
+    "value": "←"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "{"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n  "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "‿"
+  },
+  {
+    "type": "Name",
+    "value": "c"
+  },
+  {
+    "type": "Text",
+    "value": "⇐"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n  "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": "⇐"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "2"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n  "
+  },
+  {
+    "type": "Name",
+    "value": "c"
+  },
+  {
+    "type": "Text",
+    "value": "←"
+  },
+  {
+    "type": "NameFunction",
+    "value": "÷"
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "↩"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "NameFunction",
+    "value": "+"
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "}"
+  }
+]

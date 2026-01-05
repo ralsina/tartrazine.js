@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Keyword",
+    "value": "namespace"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Text",
+    "value": "urn:test:std:yang"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

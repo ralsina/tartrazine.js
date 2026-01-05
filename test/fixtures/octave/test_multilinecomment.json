@@ -1,0 +1,102 @@
+[
+  {
+    "type": "Comment",
+    "value": "%{"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "This"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "is"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "long"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n   "
+  },
+  {
+    "type": "Comment",
+    "value": "%}"
+  },
+  {
+    "type": "Text",
+    "value": "\n   "
+  },
+  {
+    "type": "Comment",
+    "value": "#{"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "This"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "too"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Comment",
+    "value": "#}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "This"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "isnt"
+  }
+]

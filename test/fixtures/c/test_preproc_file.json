@@ -1,0 +1,18 @@
+[
+  {
+    "type": "CommentPreproc",
+    "value": "#include"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentPreprocFile",
+    "value": "<foo>"
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "\n#    include <foo>\n"
+  }
+]

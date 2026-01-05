@@ -1,0 +1,130 @@
+[
+  {
+    "type": "Operator",
+    "value": "<?"
+  },
+  {
+    "type": "NameOther",
+    "value": "php"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "$pipe"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "popen"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"flamegraph.pl --title="
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$title\\"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "Keyword",
+    "value": "var"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "www"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "html"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "w"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "docs"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "flamegraph"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "svg"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\", 'w' );\n"
+  }
+]

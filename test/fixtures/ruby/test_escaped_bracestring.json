@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Name",
+    "value": "str"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Name",
+    "value": "gsub"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralStringRegex",
+    "value": "%r{\\\\\\\\}"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"/\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

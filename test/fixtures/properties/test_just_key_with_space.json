@@ -1,0 +1,14 @@
+[
+  {
+    "type": "NameAttribute",
+    "value": "just\\"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "key"
+  }
+]

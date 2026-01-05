@@ -1,0 +1,174 @@
+[
+  {
+    "type": "LiteralString",
+    "value": "$"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "_i"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\in\\{\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": ":"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha\\leq"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "3"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\}\\ \\text"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{something}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "$"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "$$"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "_i"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\in\\{\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": ":"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha\\leq"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "3"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\}\\ \\text"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{something}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "$$"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringBacktick",
+    "value": "\\["
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "_i"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\in\\{\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": ":"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha\\leq"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "3"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\}\\ \\text"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{something}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\\]"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\\("
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "_i"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\in\\{\\alpha"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": ":"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\alpha\\leq"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "3"
+  },
+  {
+    "type": "NameVariable",
+    "value": "\\}\\ \\text"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "{something}"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\\)"
+  }
+]

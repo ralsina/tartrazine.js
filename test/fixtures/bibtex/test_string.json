@@ -1,0 +1,34 @@
+[
+  {
+    "type": "NameClass",
+    "value": "@STRING"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameAttribute",
+    "value": "SCI"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"Science\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

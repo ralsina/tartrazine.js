@@ -1,0 +1,130 @@
+[
+  {
+    "type": "KeywordDeclaration",
+    "value": "func"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "test"
+  },
+  {
+    "type": "Punctuation",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "let"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "world"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"world\""
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "let"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "multi"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\"\"\n    hello\n    "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "\\("
+  },
+  {
+    "type": "Name",
+    "value": "world"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": ")"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\n    !\n    \"\"\""
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "return"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "multi"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

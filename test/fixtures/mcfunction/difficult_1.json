@@ -1,0 +1,154 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "# execute as @e[nbt={ Item: {id: \"minecraft:diamond\", Count: 64 } }] run"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# setblock ~ ~ ~ minecraft:dispenser[facing=up]{Items: [{id: \"minecraft:diamond\", Count: 1}]}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# tellraw @a [{\"text\": \"hello\", \"color\": \"blue\"}, {\"text\": \"world\", \"color\": \"blue\"}]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "execute"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "as"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "NameAttribute",
+    "value": "advancements"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "minecraft:story/form_obsidian"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "foo"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "true"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "bar"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "false"
+  },
+  {
+    "type": "Punctuation",
+    "value": "},"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "minecraft:story/follow_ender_eye"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "foo"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "false"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "bar"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "NameTag",
+    "value": "true"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}}]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "run"
+  }
+]

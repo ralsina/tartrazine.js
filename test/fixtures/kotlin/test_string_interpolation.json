@@ -1,0 +1,62 @@
+[
+  {
+    "type": "Keyword",
+    "value": "val"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameProperty",
+    "value": "something"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"something\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"Here is "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "$something"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"Here is "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${something.toUpperList()}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  }
+]

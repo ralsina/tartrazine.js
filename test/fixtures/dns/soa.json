@@ -1,0 +1,142 @@
+[
+  {
+    "type": "NameClass",
+    "value": "@"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "       "
+  },
+  {
+    "type": "Keyword",
+    "value": "IN"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "      "
+  },
+  {
+    "type": "Keyword",
+    "value": "SOA"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "     "
+  },
+  {
+    "type": "Error",
+    "value": "ns"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "root"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "; E-mail"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                             "
+  },
+  {
+    "type": "LiteralStringChar",
+    "value": "42"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "   "
+  },
+  {
+    "type": "Comment",
+    "value": "; Serial"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                             "
+  },
+  {
+    "type": "LiteralStringChar",
+    "value": "2h"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "   "
+  },
+  {
+    "type": "Comment",
+    "value": "; Refresh"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                             "
+  },
+  {
+    "type": "LiteralStringChar",
+    "value": "1h"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "   "
+  },
+  {
+    "type": "Comment",
+    "value": "; Retry"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                            "
+  },
+  {
+    "type": "LiteralStringChar",
+    "value": "14d"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "   "
+  },
+  {
+    "type": "Comment",
+    "value": "; Expire"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                             "
+  },
+  {
+    "type": "LiteralStringChar",
+    "value": "1h"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "; Negative Cache TTL"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "NameFunction",
+    "value": "foo"
+  },
+  {
+    "type": "Punctuation",
+    "value": "();"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "#"
+  },
+  {
+    "type": "Name",
+    "value": "define"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "FOO"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

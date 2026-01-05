@@ -1,0 +1,46 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "Long-NetBIOS"
+  },
+  {
+    "type": "Name",
+    "value": "-Hostname"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Error",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "PS "
+  },
+  {
+    "type": "Name",
+    "value": "C:"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\\>"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "Get-ChildItem"
+  }
+]

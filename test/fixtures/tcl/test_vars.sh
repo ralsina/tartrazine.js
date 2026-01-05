@@ -1,0 +1,1 @@
+set size 10; puts ${size}x${size}

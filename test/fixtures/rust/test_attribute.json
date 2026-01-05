@@ -1,0 +1,10 @@
+[
+  {
+    "type": "CommentPreproc",
+    "value": "#[foo(bar = [baz, qux])]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  }
+]

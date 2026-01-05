@@ -1,0 +1,10 @@
+[
+  {
+    "type": "Comment",
+    "value": "! Bad string, there isn't an even number of backslashes.\n! This should not cause catastrophic backtracking.\n"
+  },
+  {
+    "type": "Error",
+    "value": "'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'"
+  }
+]

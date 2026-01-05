@@ -1,0 +1,106 @@
+[
+  {
+    "type": "LiteralNumber",
+    "value": "0xA01B"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": "xKA"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "01"
+  },
+  {
+    "type": "Error",
+    "value": "B"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": "xLA"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "01"
+  },
+  {
+    "type": "Error",
+    "value": "B"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": "xMA"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "01"
+  },
+  {
+    "type": "Error",
+    "value": "B"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": "xHA"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "01"
+  },
+  {
+    "type": "Error",
+    "value": "B"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Error",
+    "value": "xRA"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "01"
+  },
+  {
+    "type": "Error",
+    "value": "B"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "type": "KeywordType",
+    "value": "int"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "m21"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "(("
+  },
+  {
+    "type": "Name",
+    "value": "result_0"
+  },
+  {
+    "type": "Operator",
+    "value": "*"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Name",
+    "value": "result_1"
+  },
+  {
+    "type": "Error",
+    "value": "*/"
+  },
+  {
+    "type": "Operator",
+    "value": "*"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Operator",
+    "value": "<-----"
+  },
+  {
+    "type": "Error",
+    "value": "*/"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "Name",
+    "value": "mod"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Name",
+    "value": "mod"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "Name",
+    "value": "mod"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

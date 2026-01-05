@@ -1,0 +1,62 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "# Single line comment\n// Non-idiomatic single line comment\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "/* multiline\n\n  comment\n\n*/"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "provider"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"azurerm\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "CommentSingle",
+    "value": " # (1)\n"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "NameOther",
+    "value": "features"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

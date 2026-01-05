@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Keyword",
+    "value": "value"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"5\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

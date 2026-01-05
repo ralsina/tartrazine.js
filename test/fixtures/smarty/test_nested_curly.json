@@ -1,0 +1,54 @@
+[
+  {
+    "type": "CommentPreproc",
+    "value": "{"
+  },
+  {
+    "type": "NameFunction",
+    "value": "templateFunction"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "param"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "{"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "anotherFunction"
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "param2"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "NameVariable",
+    "value": "$something"
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "}"
+  }
+]

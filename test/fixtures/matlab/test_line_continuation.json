@@ -1,0 +1,50 @@
+[
+  {
+    "type": "Name",
+    "value": "set"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralString",
+    "value": "'T'"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "300"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Comment",
+    "value": "..."
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "'P'"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "101325"
+  },
+  {
+    "type": "Punctuation",
+    "value": ");"
+  }
+]

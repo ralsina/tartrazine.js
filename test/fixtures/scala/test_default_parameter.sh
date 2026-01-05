@@ -1,0 +1,1 @@
+def f(using y: Char = if true then 'a' else 2): Int = ???

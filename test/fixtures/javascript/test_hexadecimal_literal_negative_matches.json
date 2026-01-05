@@ -1,0 +1,66 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test text that should **not** be tokenized as hexadecimal literals.\n"
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0x0"
+  },
+  {
+    "type": "NameOther",
+    "value": "N"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "x"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "Xx"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "xg"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "xhn"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

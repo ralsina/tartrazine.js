@@ -1,0 +1,1 @@
+/* Comment */ /* Another */ #define FOO 0

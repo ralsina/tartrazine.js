@@ -1,0 +1,50 @@
+[
+  {
+    "type": "Operator",
+    "value": "<?"
+  },
+  {
+    "type": "NameOther",
+    "value": "php"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "$x"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"{"
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "?>"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]
