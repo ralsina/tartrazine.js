@@ -36,9 +36,9 @@ export class StateMatcher {
       const matchResult = this.findMatch(stateDef, text, position);
 
       if (!matchResult) {
-        // No match - advance one character as unmatched text
+        // No match - advance one character as unmatched text (Error type)
         tokens.push({
-          type: 'Text',
+          type: 'Error',
           value: text[position],
         });
         position++;
@@ -52,7 +52,9 @@ export class StateMatcher {
         this.executeAction(action, match, stateStack, tokens, position);
       }
 
-      position += match[0].length;
+      // Advance position by match length, but always at least 1
+      // to prevent infinite loops with zero-length matches
+      position += Math.max(1, match[0].length);
     }
 
     // Collapse consecutive tokens of the same type

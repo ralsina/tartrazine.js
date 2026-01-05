@@ -102,16 +102,16 @@ export class RegexEngine {
    * @returns {Match|null} Match result or null if no match
    */
   match(regex, text, startOffset = 0) {
-    // Extract substring from startOffset and match
-    const substring = text.substring(startOffset);
-    const result = regex.exec(substring);
+    // Use sticky flag with lastIndex to match at specific position
+    // This preserves ^ and \b anchors correctly
+    const stickyRegex = new RegExp(regex.source, regex.flags + 'y');
+    stickyRegex.lastIndex = startOffset;
+
+    const result = stickyRegex.exec(text);
 
     if (!result) {
       return null;
     }
-
-    // Adjust the index to be relative to the original text
-    result.index = result.index + startOffset;
 
     return result;
   }
