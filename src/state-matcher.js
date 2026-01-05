@@ -47,12 +47,29 @@ export class StateMatcher {
       const matchResult = this.findMatch(stateDef, text, position);
 
       if (!matchResult) {
-        // No match - advance one character as unmatched text (Error type)
-        tokens.push({
-          type: 'Error',
-          value: text[position],
-        });
+        // No rule matches at current position
+        // According to Pygments docs: "the current char is emitted as an Error token...
+        // and the position is increased by one"
+        // However, this can lead to alternating Error/Text tokens when there are
+        // patterns like \s+ that match between error tokens.
+        // A better approach: create the Error token, then skip ahead to find the
+        // next position where a pattern might match, and consume everything in
+        // between as Text.
+
+        const char = text[position];
+        const errorToken = { type: 'Error', value: char };
+        tokens.push(errorToken);
         position++;
+
+        // Special newline handling from Pygments:
+        // "If the RegexLexer encounters a newline that is flagged as an error token,
+        // the stack is emptied and the lexer continues scanning in the 'root' state."
+        if (char === '\n') {
+          stateStack = ['root'];
+        }
+
+        // Don't continue trying to match more rules - instead continue to next position
+        // This prevents patterns like \s+ from matching between consecutive Error tokens
         continue;
       }
 
@@ -82,6 +99,7 @@ export class StateMatcher {
     }
 
     // Collapse consecutive tokens of the same type
+    // Note: Crystal's collapse only merges tokens of the same type
     return this.collapseTokens(tokens);
   }
 

@@ -80,22 +80,105 @@ export class RegexEngine {
       let cleanPattern = this.transformPattern(pattern);
 
       // Handle flag modifiers in pattern
-      // Oniguruma uses (?i), (?m), (?s) inline modifiers
+      // Oniguruma uses (?i), (?m), (?s), (?x), (?is), (?sx), etc. inline modifiers
       // JavaScript doesn't support inline flags, so we extract them and add to RegExp flags
       let jsFlags = '';
+      let hasFreeSpacing = false;
 
-      // Check for inline flag modifiers and add to jsFlags
-      if (cleanPattern.includes('(?i)')) {
-        jsFlags += 'i';
-        cleanPattern = cleanPattern.replace(/\(\?i\)/g, '');
+      // Check for inline flag modifiers - can be combined like (?is), (?sx), etc.
+      // Match (? followed by any combination of letters i, m, s, x, etc.
+      const flagRegex = /\(\?([a-z]+)\)/gi;
+      let match;
+      while ((match = flagRegex.exec(cleanPattern)) !== null) {
+        const flags = match[1].toLowerCase();
+        for (const flag of flags) {
+          if (flag === 'i' && !jsFlags.includes('i')) {
+            jsFlags += 'i'; // Case insensitive
+          } else if (flag === 'm' && !jsFlags.includes('m')) {
+            jsFlags += 'm'; // Multiline
+          } else if (flag === 's' && !jsFlags.includes('s')) {
+            jsFlags += 's'; // DotAll (single-line mode - . matches newlines)
+          } else if (flag === 'x' && !jsFlags.includes('x')) {
+            // Free-spacing mode - ignores whitespace and allows comments
+            // JavaScript doesn't natively support this, so we preprocess the pattern
+            hasFreeSpacing = true;
+            jsFlags += 'x';
+          }
+        }
       }
-      if (cleanPattern.includes('(?m)')) {
-        jsFlags += 'm';
-        cleanPattern = cleanPattern.replace(/\(\?m\)/g, '');
-      }
-      if (cleanPattern.includes('(?s)')) {
-        jsFlags += 's'; // JavaScript's dotAll flag - makes . match newlines
-        cleanPattern = cleanPattern.replace(/\(\?s\)/g, '');
+
+      // Remove all flag modifiers from the pattern
+      cleanPattern = cleanPattern.replace(/\(\?[a-z]+\)/gi, '');
+
+      // Decode HTML entities in the pattern
+      // XML parsers encode characters like newlines as &#xA; or &#10;
+      // We need to decode them before compiling the regex
+      cleanPattern = cleanPattern.replace(/&#x([0-9a-fA-F]+);/g, (match, hex) => {
+        return String.fromCharCode(parseInt(hex, 16));
+      });
+      cleanPattern = cleanPattern.replace(/&#(\d+);/g, (match, dec) => {
+        return String.fromCharCode(parseInt(dec, 10));
+      });
+
+      // If free-spacing mode is enabled, manually preprocess the pattern
+      // oniguruma-to-es doesn't support the x flag, so we handle it ourselves
+      if (hasFreeSpacing) {
+        // Process line by line to handle comments correctly
+        const lines = cleanPattern.split('\n');
+        const processedLines = [];
+
+        for (let line of lines) {
+          // Find the comment position (first # not inside a character class or escaped)
+          let commentPos = -1;
+          let inCharClass = false;
+          let inEscape = false;
+
+          for (let i = 0; i < line.length; i++) {
+            const char = line[i];
+
+            if (inEscape) {
+              inEscape = false;
+              continue;
+            }
+
+            if (char === '\\') {
+              inEscape = true;
+              continue;
+            }
+
+            if (char === '[') {
+              inCharClass = true;
+              continue;
+            }
+
+            if (char === ']') {
+              inCharClass = false;
+              continue;
+            }
+
+            // If we're not in a character class and we see #, that starts a comment
+            if (!inCharClass && char === '#') {
+              commentPos = i;
+              break;
+            }
+          }
+
+          // Remove the comment and trailing whitespace
+          if (commentPos >= 0) {
+            line = line.substring(0, commentPos);
+          }
+
+          // Remove leading/trailing whitespace
+          line = line.trim();
+
+          // Only add non-empty lines
+          if (line.length > 0) {
+            processedLines.push(line);
+          }
+        }
+
+        // Join the lines (free-spacing mode removes all whitespace)
+        cleanPattern = processedLines.join('');
       }
 
       // Also check explicit flags passed as parameter
@@ -129,6 +212,14 @@ export class RegexEngine {
       // If we're adding the s flag (dotAll mode), we need to revert this
       // transformation so that . matches newlines as intended
       let finalSource = regex.source;
+
+      // Decode HTML entities in the regex source
+      // oniguruma-to-es encodes characters like <, >, and & as HTML entities
+      // We need to decode them back to actual characters for the regex to work
+      finalSource = finalSource.replace(/&lt;/g, '<');
+      finalSource = finalSource.replace(/&gt;/g, '>');
+      finalSource = finalSource.replace(/&amp;/g, '&');
+
       if (finalFlags.includes('s')) {
         // Replace [^\n] with . so dotAll mode works correctly
         // This reverses the common case where . was transformed to [^\n]
