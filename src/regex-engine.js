@@ -43,21 +43,34 @@ export class RegexEngine {
 
       // Handle flag modifiers in pattern
       // Oniguruma uses (?i), (?m), (?s) inline modifiers
-      // We need to extract them and convert to RegExp flags
+      // JavaScript doesn't support inline flags, so we extract them and add to RegExp flags
       let cleanPattern = pattern;
       let jsFlags = '';
 
       // Check for inline flag modifiers and add to jsFlags
-      if (cleanPattern.includes('(?i)') || flags.includes('i')) {
+      if (cleanPattern.includes('(?i)')) {
+        jsFlags += 'i';
+        cleanPattern = cleanPattern.replace(/\(\?i\)/g, '');
+      }
+      if (cleanPattern.includes('(?m)')) {
+        jsFlags += 'm';
+        cleanPattern = cleanPattern.replace(/\(\?m\)/g, '');
+      }
+      if (cleanPattern.includes('(?s)')) {
+        jsFlags += 's'; // JavaScript's dotAll flag - makes . match newlines
+        cleanPattern = cleanPattern.replace(/\(\?s\)/g, '');
+      }
+
+      // Also check explicit flags passed as parameter
+      if (flags.includes('i') && !jsFlags.includes('i')) {
         jsFlags += 'i';
       }
-      if (cleanPattern.includes('(?m)') || flags.includes('m')) {
+      if (flags.includes('m') && !jsFlags.includes('m')) {
         jsFlags += 'm';
       }
-      // Note: (?s) makes dot match newlines - we'll strip it since oniguruma-to-es doesn't support it inline
-
-      // Remove inline flag modifiers from pattern before passing to oniguruma-to-es
-      cleanPattern = cleanPattern.replace(/\(\?[ims-]+\)/g, '');
+      if (flags.includes('s') && !jsFlags.includes('s')) {
+        jsFlags += 's';
+      }
 
       // Convert to JavaScript RegExp using oniguruma-to-es
       const regex = toRegExp(cleanPattern, options);
