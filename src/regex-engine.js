@@ -29,6 +29,21 @@ export class RegexEngine {
   }
 
   /**
+   * Transform PCRE2 pattern to be compatible with oniguruma-to-es
+   * @param {string} pattern - PCRE2 pattern
+   * @returns {string} Transformed pattern
+   */
+  transformPattern(pattern) {
+    // Fix empty bracket issue: [] at start of character class should be \[]
+    // In PCRE2: []abc] matches ], a, b, c
+    // In JS: []abc] is invalid (empty character class)
+    // We need to convert [] to \[] when it appears right after [
+    let transformed = pattern;
+    transformed = transformed.replace(/\[\]/g, '[\\[]');
+    return transformed;
+  }
+
+  /**
    * Create RegExp from Oniguruma pattern
    * @param {string} pattern - Oniguruma/PCRE2 pattern
    * @param {string} flags - Pattern flags
@@ -45,10 +60,12 @@ export class RegexEngine {
         lazyCompileLength: 1, // Lazy compile very short patterns
       };
 
+      // Transform PCRE2 pattern for compatibility
+      let cleanPattern = this.transformPattern(pattern);
+
       // Handle flag modifiers in pattern
       // Oniguruma uses (?i), (?m), (?s) inline modifiers
       // JavaScript doesn't support inline flags, so we extract them and add to RegExp flags
-      let cleanPattern = pattern;
       let jsFlags = '';
 
       // Check for inline flag modifiers and add to jsFlags
