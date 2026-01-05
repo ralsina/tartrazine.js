@@ -28,22 +28,14 @@ export class Lexer {
    * Tokenize text
    * @param {string} text - Text to tokenize
    * @param {Object} options - Options
-   * @param {string} options.state - Initial state (auto-detected if not specified)
+   * @param {string} options.state - Initial state (default: 'root')
    * @returns {Promise<Array>} Array of tokens
    */
   async tokenize(text, options = {}) {
     await this.init();
 
-    // Auto-detect initial state if not specified
-    let initialState = options.state;
-    if (!initialState) {
-      // Try common default states in order
-      const stateNames = Object.keys(this.lexerDef.states);
-      initialState = stateNames.find(s => s === 'root') ||
-                      stateNames.find(s => s === 'data') ||
-                      stateNames[0];
-    }
-
+    // Tartrazine always starts in 'root' state
+    const initialState = options.state || 'root';
     const matcher = new StateMatcher(this.lexerDef);
     return matcher.tokenize(text, initialState);
   }
