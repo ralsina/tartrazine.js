@@ -250,13 +250,24 @@ export class StateMatcher {
         break;
 
       case 'push':
-        // Push state onto stack
-        // If no state specified (null or undefined), push the current state again (for nested structures)
-        if (action.state && action.state !== '#pop') {
-          stateStack.push(action.state);
-        } else if (!action.state) {
+        // Push state(s) onto stack
+        // Can have multiple states to push in sequence
+        // If no state specified (null or empty), push the current state again (for nested structures)
+        const statesToPush = action.states || (action.state ? [action.state] : []);
+
+        if (statesToPush.length === 0) {
           // <push/> without state means push current state
           stateStack.push(stateStack[stateStack.length - 1]);
+        } else {
+          // Push each state in sequence
+          for (const state of statesToPush) {
+            if (state === '#pop' && stateStack.length > 1) {
+              // #pop means pop the state instead of pushing
+              stateStack.pop();
+            } else {
+              stateStack.push(state);
+            }
+          }
         }
         break;
 
@@ -273,6 +284,31 @@ export class StateMatcher {
         // Include is handled during rule compilation
         // No action needed here
         break;
+
+      case 'combined': {
+        // Combine multiple states into one anonymous state
+        // Merge rules from all specified states
+        const mergedRules = [];
+        for (const stateName of action.states) {
+          const stateDef = this.lexerDef.states[stateName];
+          if (stateDef && stateDef.rules) {
+            mergedRules.push(...stateDef.rules);
+          }
+        }
+
+        // Create anonymous state with a unique name
+        const anonymousStateName = `__combined_${Date.now()}_${Math.random().toString(36).substring(2, 10)}__`;
+
+        // Add the new state to the lexer definition
+        this.lexerDef.states[anonymousStateName] = {
+          name: anonymousStateName,
+          rules: mergedRules,
+        };
+
+        // Push the anonymous state onto the stack
+        stateStack.push(anonymousStateName);
+        break;
+      }
 
       default:
         console.warn('Unknown action type:', action.type);

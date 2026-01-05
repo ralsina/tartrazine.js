@@ -17,7 +17,33 @@ export async function loadLexer(lexerName) {
   // Use the synced lexers directory for deployment/packaging
   const xmlPath = `lexers/${lexerName}.xml`;
   const xmlContent = readFileSync(xmlPath, 'utf-8');
-  return parseLexerXML(xmlContent);
+
+  // Preprocess XML to handle duplicate attributes in <combined> and <push> elements
+  // fast-xml-parser doesn't preserve duplicate attributes, so we need to
+  // convert <combined state="a" state="b"/> to <combined state="a,b"/>
+  // and <push state="a" state="b"/> to <push state="a,b"/>
+  const preprocessed = xmlContent.replace(
+    /<(combined|push)\s+([^>]*?)>/g,
+    (match, tagName, attrs) => {
+      // Extract all state attributes
+      const stateRegex = /state="([^"]+)"/g;
+      const states = [];
+      let stateMatch;
+      while ((stateMatch = stateRegex.exec(attrs)) !== null) {
+        states.push(stateMatch[1]);
+      }
+
+      if (states.length > 0) {
+        // Remove all state attributes from attrs
+        const attrsWithoutStates = attrs.replace(/state="[^"]+"\s*/g, '');
+        // Add combined state attribute as comma-separated list
+        return `<${tagName} state="${states.join(',')}" ${attrsWithoutStates}>`;
+      }
+      return match;
+    }
+  );
+
+  return parseLexerXML(preprocessed);
 }
 
 /**
@@ -95,9 +121,14 @@ function parseRules(rules) {
     }
 
     if ('push' in rule) {
+      // push can have multiple states (comma-separated after preprocessing)
+      // e.g., <push state="closing-brace,command-body,opening-brace"/>
+      const states = rule.push.state ? rule.push.state.split(',') : [];
+
       parsedRule.actions.push({
         type: 'push',
-        state: rule.push.state || null, // null means push current state
+        state: states.length > 0 ? states[0] : null, // TODO: support pushing multiple states
+        states: states, // Store all states for future use
       });
     }
 
@@ -112,6 +143,18 @@ function parseRules(rules) {
       parsedRule.actions.push({
         type: 'include',
         state: rule.include.state,
+      });
+    }
+
+    // Handle combined - merges multiple states into one anonymous state
+    if ('combined' in rule) {
+      // combined can have multiple states, now as comma-separated value
+      // e.g., <combined state="stringescape,dqs"/>
+      const states = rule.combined.state ? rule.combined.state.split(',') : [];
+
+      parsedRule.actions.push({
+        type: 'combined',
+        states,
       });
     }
 

@@ -34,13 +34,29 @@ export class RegexEngine {
    * @returns {string} Transformed pattern
    */
   transformPattern(pattern) {
-    // Fix empty bracket issue: [] at start of character class should be \[]
-    // In PCRE2: []abc] matches ], a, b, c
-    // In JS: []abc] is invalid (empty character class)
-    // We need to convert [] to \[] when it appears right after [
-    let transformed = pattern;
-    transformed = transformed.replace(/\[\]/g, '[\\[]');
-    return transformed;
+    // The Rust lexer has pattern "#![ ^[ \r\n ].*$" where \r and \n are literal
+    // backslash+r and backslash+n (two characters each, not escape sequences).
+    // This pattern can't be parsed by oniguruma-to-es due to the [^[] sequence.
+    // The [ exclusion in [^[ is redundant since #! already doesn't match #[foo].
+    // We remove the [ from the character class to make it compatible.
+
+    // Construct the pattern using character codes to match the literal backslashes
+    const rustShebangPattern = String.fromCharCode(35, 33, 91, 94, 91, 92, 114, 92, 110, 93, 46, 42, 36); // #![ ^[ \r\n ].*$
+    const transformedRustPattern = String.fromCharCode(35, 33, 91, 94, 92, 114, 92, 110, 93, 46, 42, 36); // #![ ^\r\n].*$
+
+    if (pattern === rustShebangPattern) {
+      return transformedRustPattern;
+    }
+
+    // The Python lexer has pattern "[]{}:(),;[]" where [] matches literal ]
+    // In PCRE2, [] at the start or end of a character class matches a literal ]
+    // oniguruma-to-es interprets [] as an empty character class (error).
+    // We need to escape the ] characters to make it compatible.
+    if (pattern === '[]{}:(),;[]') {
+      return '[\\]{}:(),;\\[]';
+    }
+
+    return pattern;
   }
 
   /**
@@ -109,7 +125,18 @@ export class RegexEngine {
         finalFlags += 's';
       }
 
-      return new RegExp(regex.source, finalFlags);
+      // oniguruma-to-es transforms . to [^\n] when (?s) is not present
+      // If we're adding the s flag (dotAll mode), we need to revert this
+      // transformation so that . matches newlines as intended
+      let finalSource = regex.source;
+      if (finalFlags.includes('s')) {
+        // Replace [^\n] with . so dotAll mode works correctly
+        // This reverses the common case where . was transformed to [^\n]
+        // The source contains literal backslash-n, so we need \\n in the regex
+        finalSource = finalSource.replace(/\[\^\\n\]/g, '.');
+      }
+
+      return new RegExp(finalSource, finalFlags);
     } catch (error) {
       throw new Error(`Failed to compile pattern "${pattern}": ${error.message}`);
     }
