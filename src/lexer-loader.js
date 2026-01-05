@@ -94,21 +94,21 @@ function parseRules(rules) {
       });
     }
 
-    if (rule.push) {
+    if ('push' in rule) {
       parsedRule.actions.push({
         type: 'push',
-        state: rule.push.state,
+        state: rule.push.state || null, // null means push current state
       });
     }
 
-    if (rule.pop) {
+    if ('pop' in rule) {
       parsedRule.actions.push({
         type: 'pop',
         depth: parseInt(rule.pop.depth || '1', 10),
       });
     }
 
-    if (rule.include) {
+    if ('include' in rule) {
       parsedRule.actions.push({
         type: 'include',
         state: rule.include.state,

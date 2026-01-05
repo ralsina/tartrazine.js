@@ -251,8 +251,12 @@ export class StateMatcher {
 
       case 'push':
         // Push state onto stack
+        // If no state specified (null or undefined), push the current state again (for nested structures)
         if (action.state && action.state !== '#pop') {
           stateStack.push(action.state);
+        } else if (!action.state) {
+          // <push/> without state means push current state
+          stateStack.push(stateStack[stateStack.length - 1]);
         }
         break;
 
