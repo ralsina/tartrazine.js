@@ -1,0 +1,20 @@
+{
+  "name": "tartrazine.js",
+  "version": "0.0.1",
+  "description": "JavaScript port of tartrazine syntax highlighting library",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0",
+    "oniguruma-to-es": "^4.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
