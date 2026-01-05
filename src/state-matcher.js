@@ -40,7 +40,6 @@ export class StateMatcher {
         tokens.push({
           type: 'Text',
           value: text[position],
-          position,
         });
         position++;
         continue;
@@ -56,7 +55,38 @@ export class StateMatcher {
       position += match[0].length;
     }
 
-    return tokens;
+    // Collapse consecutive tokens of the same type
+    return this.collapseTokens(tokens);
+  }
+
+  /**
+   * Collapse consecutive tokens of the same type
+   * @param {Array} tokens - Array of tokens
+   * @returns {Array} Collapsed tokens
+   */
+  collapseTokens(tokens) {
+    if (tokens.length === 0) return [];
+
+    const collapsed = [];
+    let current = { ...tokens[0] };
+
+    for (let i = 1; i < tokens.length; i++) {
+      const token = tokens[i];
+
+      if (token.type === current.type) {
+        // Merge with current token
+        current.value += token.value;
+      } else {
+        // Push current and start new
+        collapsed.push(current);
+        current = { ...token };
+      }
+    }
+
+    // Push the last token
+    collapsed.push(current);
+
+    return collapsed;
   }
 
   /**
@@ -119,7 +149,6 @@ export class StateMatcher {
         tokens.push({
           type: action.tokenType,
           value: match[0],
-          position,
         });
         break;
 
