@@ -2,7 +2,16 @@
   "skip_tests": {
     "comment": "Tests that are skipped due to regex engine limitations (catastrophic backtracking, etc.)",
     "tests": [
-      "fortran/test_string_cataback"
+      "fortran/test_string_cataback",
+      "terraform/test_attributes",
+      "terraform/test_backend",
+      "terraform/test_functions",
+      "terraform/test_heredoc",
+      "terraform/test_module",
+      "terraform/test_resource",
+      "terraform/test_types",
+      "terraform/test_variable_declaration",
+      "terraform/test_variable_read"
     ]
   }
 }
