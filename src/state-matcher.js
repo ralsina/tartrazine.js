@@ -22,7 +22,18 @@ export class StateMatcher {
     const stateStack = [initialState];
     let position = 0;
 
+    // Track iterations to prevent infinite loops
+    let iterations = 0;
+    const maxIterations = text.length * 100; // Safety limit
+
     while (position < text.length) {
+      // Prevent infinite loops
+      iterations++;
+      if (iterations > maxIterations) {
+        console.error('Infinite loop detected in tokenization');
+        break;
+      }
+
       const currentState = stateStack[stateStack.length - 1];
       const stateDef = this.lexerDef.states[currentState];
 
@@ -52,9 +63,10 @@ export class StateMatcher {
         this.executeAction(action, match, stateStack, tokens, position);
       }
 
-      // Advance position by match length, but always at least 1
-      // to prevent infinite loops with zero-length matches
-      position += Math.max(1, match[0].length);
+      // Advance position by match length
+      // If match length is 0, we need to advance by 1 to prevent infinite loops
+      const matchLength = match[0].length || 0;
+      position += matchLength > 0 ? matchLength : 1;
     }
 
     // Collapse consecutive tokens of the same type

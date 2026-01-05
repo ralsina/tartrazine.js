@@ -39,6 +39,8 @@ export class RegexEngine {
       const options = {
         global: false, // We don't want global matching by default
         forgiving: true, // Be lenient with unsupported features
+        recursionLimit: 50, // Limit recursion to prevent catastrophic backtracking
+        lazyCompileLength: 3, // Lazy compile short patterns
       };
 
       // Handle flag modifiers in pattern

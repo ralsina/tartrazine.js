@@ -1,0 +1,8 @@
+{
+  "skip_tests": {
+    "comment": "Tests that are skipped due to regex engine limitations (catastrophic backtracking, etc.)",
+    "tests": [
+      "fortran/test_string_cataback"
+    ]
+  }
+}
