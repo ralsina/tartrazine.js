@@ -3,6 +3,7 @@
     "comment": "Tests that are skipped due to regex engine limitations (catastrophic backtracking, etc.)",
     "tests": [
       "fortran/test_string_cataback",
+      "json/test_backtracking",
       "terraform/test_attributes",
       "terraform/test_backend",
       "terraform/test_functions",
