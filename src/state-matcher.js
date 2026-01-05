@@ -186,7 +186,7 @@ export class StateMatcher {
       // If there's no pattern, it's a zero-length match rule (should match at any position)
       if (nonIncludeActions.length > 0) {
         expanded.push({
-          regex: rule.pattern ? this.regexEngine.compile(rule.pattern) : null,
+          regex: rule.pattern ? this.regexEngine.compile(rule.pattern, '', this.lexerDef.caseInsensitive) : null,
           actions: rule.actions,
         });
       }

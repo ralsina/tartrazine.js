@@ -13,16 +13,17 @@ export class RegexEngine {
    * Compile a pattern with flags
    * @param {string} pattern - Oniguruma/PCRE2 pattern
    * @param {string} flags - Pattern flags (m, i, s, etc.)
+   * @param {boolean} caseInsensitive - Whether to make the pattern case-insensitive
    * @returns {RegExp} Compiled regular expression
    */
-  compile(pattern, flags = '') {
-    const cacheKey = `${pattern}::${flags}`;
+  compile(pattern, flags = '', caseInsensitive = false) {
+    const cacheKey = `${pattern}::${flags}::${caseInsensitive}`;
 
     if (this.cache.has(cacheKey)) {
       return this.cache.get(cacheKey);
     }
 
-    const regex = this.createRegex(pattern, flags);
+    const regex = this.createRegex(pattern, flags, caseInsensitive);
     this.cache.set(cacheKey, regex);
     return regex;
   }
@@ -31,16 +32,17 @@ export class RegexEngine {
    * Create RegExp from Oniguruma pattern
    * @param {string} pattern - Oniguruma/PCRE2 pattern
    * @param {string} flags - Pattern flags
+   * @param {boolean} caseInsensitive - Whether to make the pattern case-insensitive
    * @returns {RegExp} JavaScript RegExp object
    */
-  createRegex(pattern, flags) {
+  createRegex(pattern, flags, caseInsensitive = false) {
     try {
       // Parse flags
       const options = {
         global: false, // We don't want global matching by default
         forgiving: true, // Be lenient with unsupported features
-        recursionLimit: 50, // Limit recursion to prevent catastrophic backtracking
-        lazyCompileLength: 3, // Lazy compile short patterns
+        recursionLimit: 10, // Aggressively limit recursion to prevent catastrophic backtracking
+        lazyCompileLength: 1, // Lazy compile very short patterns
       };
 
       // Handle flag modifiers in pattern
@@ -64,7 +66,7 @@ export class RegexEngine {
       }
 
       // Also check explicit flags passed as parameter
-      if (flags.includes('i') && !jsFlags.includes('i')) {
+      if ((flags.includes('i') || caseInsensitive) && !jsFlags.includes('i')) {
         jsFlags += 'i';
       }
       if (flags.includes('m') && !jsFlags.includes('m')) {

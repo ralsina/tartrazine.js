@@ -64,6 +64,7 @@ function transformLexerDef(lexer) {
     filenames: extractArray(config.filename),
     mimeTypes: extractArray(config.mime_type),
     ensureNl: config.ensure_nl === 'true' || config.ensure_nl === true,
+    caseInsensitive: config.case_insensitive === 'true' || config.case_insensitive === true,
     states,
   };
 }
