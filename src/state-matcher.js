@@ -59,14 +59,26 @@ export class StateMatcher {
       // Execute actions for the matched rule
       const { match, rule } = matchResult;
 
-      for (const action of rule.actions) {
-        this.executeAction(action, match, stateStack, tokens, position);
-      }
-
-      // Advance position by match length
-      // If match length is 0, we need to advance by 1 to prevent infinite loops
+      // Only execute token actions if the match has non-zero length
+      // Zero-length matches (like lookaheads) should not generate tokens
       const matchLength = match[0].length || 0;
-      position += matchLength > 0 ? matchLength : 1;
+      if (matchLength > 0) {
+        for (const action of rule.actions) {
+          this.executeAction(action, match, stateStack, tokens, position);
+        }
+        // Advance position by match length
+        position += matchLength;
+      } else {
+        // For zero-length matches, only execute non-token actions (push, pop, include)
+        // Do NOT advance position - continue to next rule
+        for (const action of rule.actions) {
+          if (action.type !== 'token' && action.type !== 'bygroups') {
+            this.executeAction(action, match, stateStack, tokens, position);
+          }
+        }
+        // Continue to next rule instead of breaking
+        continue;
+      }
     }
 
     // Collapse consecutive tokens of the same type
