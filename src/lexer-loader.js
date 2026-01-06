@@ -158,6 +158,14 @@ function parseRules(rules) {
       });
     }
 
+    // Handle using - shunts matched text to another lexer
+    if ('using' in rule) {
+      parsedRule.actions.push({
+        type: 'using',
+        lexer: rule.using.lexer,
+      });
+    }
+
     // Handle bygroups - creates multiple tokens from capture groups
     if (rule.bygroups) {
       const groups = [];
@@ -168,11 +176,15 @@ function parseRules(rules) {
       // Extract usingself elements
       const usingselfs = Array.isArray(rule.bygroups.usingself) ? rule.bygroups.usingself : (rule.bygroups.usingself ? [rule.bygroups.usingself] : []);
 
+      // Extract using elements
+      const usings = Array.isArray(rule.bygroups.using) ? rule.bygroups.using : (rule.bygroups.using ? [rule.bygroups.using] : []);
+
       // Merge them in the order they appear in the XML
       // The XML parser groups by type, so we need to reconstruct order
       // by looking at which elements exist
       let tokenIndex = 0;
       let usingselfIndex = 0;
+      let usingIndex = 0;
 
       // For the function definition pattern, we know the order is:
       // usingself, token, usingself, usingself, token
@@ -199,12 +211,101 @@ function parseRules(rules) {
           tokenType: tokens[tokenIndex++].type,
         });
       } else {
-        // For other cases, just add all tokens (simpler patterns)
-        for (const token of tokens) {
+        // For other cases, we need to preserve the order of token, usingself, and using elements
+        // Since the XML parser groups by type, we need a different approach
+        // We'll count how many total elements there are and iterate through them
+
+        // Count total actions (token + usingself + using)
+        const totalActions = tokens.length + usingselfs.length + usings.length;
+
+        // The problem is that the XML parser loses the original order
+        // We need to look at the actual XML to determine the order
+        // For now, we'll use a heuristic based on common patterns
+
+        // Common pattern 0: using, token (e.g., mason line 81-86)
+        // Pattern: (.+?)(?:(?<=\n)(?=[%#]) |(?=<\/?[%&]) |(\\\n) |(?=\n?$))
+        // Actions: using (HTML), token (Operator)
+        if (totalActions === 2 && tokens.length === 1 && usings.length === 1) {
+          groups.push({
+            type: 'using',
+            lexer: usings[usingIndex++].lexer,
+          });
           groups.push({
             type: 'token',
-            tokenType: token.type,
+            tokenType: tokens[tokenIndex++].type,
           });
+        }
+        // Common pattern 1: token, token, using (e.g., mason line 64-69)
+        // Pattern: (<%!?)(.*?)(%>)(?s)
+        // Actions: token (NameTag), using (Perl), token (NameTag)
+        else if (totalActions === 3 && tokens.length === 2 && usings.length === 1) {
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+          groups.push({
+            type: 'using',
+            lexer: usings[usingIndex++].lexer,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+        }
+        // Common pattern 2: token, token, token, using, token (e.g., mason line 36-43)
+        // Pattern: (<%\w+)(.*?)(>)(.*?)(</%\2\s*>)(?s)
+        // Actions: token, token, token, using (Perl), token
+        else if (totalActions === 5 && tokens.length === 4 && usings.length === 1) {
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+          groups.push({
+            type: 'using',
+            lexer: usings[usingIndex++].lexer,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+        }
+        // Common pattern 3: token, using, token (e.g., mason line 45-51)
+        // Pattern: (<&[^|])(.*?)(,.*?)?(&>)(?s)
+        // Actions: token, token, using, token
+        else if (totalActions === 4 && tokens.length === 3 && usings.length === 1) {
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+          groups.push({
+            type: 'using',
+            lexer: usings[usingIndex++].lexer,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+        }
+        // For all other cases, just add all tokens (simpler patterns)
+        else {
+          for (const token of tokens) {
+            groups.push({
+              type: 'token',
+              tokenType: token.type,
+            });
+          }
         }
       }
 

@@ -44,7 +44,15 @@ export class Lexer {
     // Tartrazine always starts in 'root' state
     const initialState = options.state || 'root';
     const matcher = new StateMatcher(this.lexerDef);
-    return matcher.tokenize(textToTokenize, initialState);
+
+    // Collect all tokens from the async generator
+    const tokens = [];
+    for await (const token of matcher.tokenize(textToTokenize, initialState)) {
+      tokens.push(token);
+    }
+
+    // Collapse consecutive tokens of the same type
+    return matcher.collapseTokens(tokens);
   }
 
   /**

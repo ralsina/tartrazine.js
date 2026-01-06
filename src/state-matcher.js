@@ -1,4 +1,5 @@
 import { RegexEngine } from './regex-engine.js';
+import { Lexer } from './lexer.js';
 
 /**
  * State Matcher - Core tokenization engine
@@ -12,21 +13,33 @@ export class StateMatcher {
   }
 
   /**
-   * Tokenize text starting from a given state
+   * Tokenize text starting from a given state (async generator-based)
+   * Matches Crystal's deque-based approach
    * @param {string} text - Text to tokenize
    * @param {string} initialState - Starting state name
-   * @returns {Array} Array of tokens
+   * @yields {Object} Individual tokens
    */
-  tokenize(text, initialState = 'root') {
-    const tokens = [];
+  async *tokenize(text, initialState = 'root') {
     const stateStack = [initialState];
     let position = 0;
+    const deque = []; // Buffer for tokens
 
     // Track iterations to prevent infinite loops
     let iterations = 0;
     const maxIterations = text.length * 100; // Safety limit
 
-    while (position < text.length) {
+    while (true) {
+      // If deque has tokens, return one (like Crystal's @dq.shift)
+      if (deque.length > 0) {
+        yield deque.shift();
+        continue;
+      }
+
+      // If we've reached end of text, we're done
+      if (position >= text.length) {
+        break;
+      }
+
       // Prevent infinite loops
       iterations++;
       if (iterations > maxIterations) {
@@ -48,59 +61,102 @@ export class StateMatcher {
 
       if (!matchResult) {
         // No rule matches at current position
-        // According to Pygments docs: "the current char is emitted as an Error token...
-        // and the position is increased by one"
-        // However, this can lead to alternating Error/Text tokens when there are
-        // patterns like \s+ that match between error tokens.
-        // A better approach: create the Error token, then skip ahead to find the
-        // next position where a pattern might match, and consume everything in
-        // between as Text.
-
+        // Create one error token and add to deque (like Crystal)
         const char = text[position];
-        const errorToken = { type: 'Error', value: char };
-        tokens.push(errorToken);
-        position++;
-
-        // Special newline handling from Pygments:
-        // "If the RegexLexer encounters a newline that is flagged as an error token,
-        // the stack is emptied and the lexer continues scanning in the 'root' state."
-        if (char === '\n') {
-          stateStack = ['root'];
+        if (char.charCodeAt(0) === 10) { // newline
+          deque.push({ type: 'Text', value: '\n' });
+          stateStack.length = 0;
+          stateStack.push('root');
+        } else {
+          deque.push({ type: 'Error', value: char });
         }
-
-        // Don't continue trying to match more rules - instead continue to next position
-        // This prevents patterns like \s+ from matching between consecutive Error tokens
+        position++;
+        // Continue to next iteration to return from deque
         continue;
       }
 
-      // Execute actions for the matched rule
+      // A rule matched!
       const { match, rule } = matchResult;
 
       // Only execute token actions if the match has non-zero length
       // Zero-length matches (like lookaheads) should not generate tokens
       const matchLength = match[0].length || 0;
       if (matchLength > 0) {
-        for (const action of rule.actions) {
-          this.executeAction(action, match, stateStack, tokens, position);
+        // Execute actions and add all tokens to deque
+        const newTokens = await this.executeActions(rule.actions, match, stateStack, position);
+
+        // Split tokens containing newlines (like Crystal's split_tokens)
+        const splitTokens = this.splitTokens(newTokens);
+        for (const token of splitTokens) {
+          deque.push(token);
         }
+
         // Advance position by match length
         position += matchLength;
       } else {
         // For zero-length matches, only execute non-token actions (push, pop, include)
         // Do NOT advance position - continue to next rule
-        for (const action of rule.actions) {
-          if (action.type !== 'token' && action.type !== 'bygroups') {
-            this.executeAction(action, match, stateStack, tokens, position);
-          }
-        }
-        // Continue to next rule instead of breaking
-        continue;
+        this.executeActionsNonToken(rule.actions, match, stateStack, position);
+      }
+      // Continue to next iteration to return from deque
+    }
+  }
+
+  /**
+   * Execute actions and return array of tokens
+   * @param {Array} actions - Actions to execute
+   * @param {Array} match - Regex match result
+   * @param {Array} stateStack - State stack
+   * @param {number} position - Current position
+   * @returns {Promise<Array>} Array of tokens
+   */
+  async executeActions(actions, match, stateStack, position) {
+    const tokens = [];
+    for (const action of actions) {
+      await this.executeAction(action, match, stateStack, tokens, position);
+    }
+    return tokens;
+  }
+
+  /**
+   * Execute non-token actions (push, pop, include) for zero-length matches
+   * @param {Array} actions - Actions to execute
+   * @param {Array} match - Regex match result
+   * @param {Array} stateStack - State stack
+   * @param {number} position - Current position
+   */
+  async executeActionsNonToken(actions, match, stateStack, position) {
+    for (const action of actions) {
+      // Only execute state-modifying actions, not token-generating actions
+      if (action.type === 'push' || action.type === 'pop' || action.type === 'include') {
+        await this.executeAction(action, match, stateStack, [], position);
       }
     }
+  }
 
-    // Collapse consecutive tokens of the same type
-    // Note: Crystal's collapse only merges tokens of the same type
-    return this.collapseTokens(tokens);
+  /**
+   * If a token contains a newline, split it into two tokens
+   * @param {Array} tokens - Array of tokens
+   * @returns {Array} Tokens with newlines split
+   */
+  splitTokens(tokens) {
+    const splitTokens = [];
+    for (const token of tokens) {
+      if (token.value.includes('\n')) {
+        const values = token.value.split('\n');
+        for (let i = 0; i < values.length; i++) {
+          let value = values[i];
+          // Add back the newline except for the last value
+          if (i < values.length - 1) {
+            value += '\n';
+          }
+          splitTokens.push({ type: token.type, value });
+        }
+      } else {
+        splitTokens.push(token);
+      }
+    }
+    return splitTokens;
   }
 
   /**
@@ -233,7 +289,7 @@ export class StateMatcher {
    * @param {Array} tokens - Token array
    * @param {number} position - Current position
    */
-  executeAction(action, match, stateStack, tokens, position) {
+  async executeAction(action, match, stateStack, tokens, position) {
     switch (action.type) {
       case 'token':
         tokens.push({
@@ -254,8 +310,19 @@ export class StateMatcher {
             if (match[groupIndex] !== '') {
               // If groupAction is usingself, recursively tokenize the matched text
               if (groupAction.type === 'usingself') {
-                const recursiveTokens = this.tokenize(match[groupIndex], groupAction.state);
+                // Consume the async generator and collect tokens
+                const recursiveTokens = [];
+                for await (const token of this.tokenize(match[groupIndex], groupAction.state)) {
+                  recursiveTokens.push(token);
+                }
                 tokens.push(...recursiveTokens);
+              } else if (groupAction.type === 'using') {
+                // Shunt to another lexer
+                // Normalize lexer name to lowercase
+                const lexer = new Lexer(groupAction.lexer.toLowerCase());
+                await lexer.init();
+                const usingTokens = await lexer.tokenize(match[groupIndex]);
+                tokens.push(...usingTokens);
               } else if (groupAction.type === 'token') {
                 tokens.push({
                   type: groupAction.tokenType,
@@ -302,6 +369,21 @@ export class StateMatcher {
         // Include is handled during rule compilation
         // No action needed here
         break;
+
+      case 'using': {
+        // Shunt to another lexer entirely
+        // Create a new lexer and tokenize the matched text with it
+        // Normalize lexer name to lowercase
+        const lexer = new Lexer(action.lexer.toLowerCase());
+        await lexer.init();
+
+        // Tokenize the matched text with the new lexer
+        const usingTokens = await lexer.tokenize(match[0]);
+
+        // Add all tokens from the other lexer to our token array
+        tokens.push(...usingTokens);
+        break;
+      }
 
       case 'combined': {
         // Combine multiple states into one anonymous state
