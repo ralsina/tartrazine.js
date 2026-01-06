@@ -84,19 +84,23 @@ export const TokenAbbreviations = {
   "NameProperty": "py",
   "NameTag": "nt",
   "NameVariable": "nv",
-  "NameVariableAnonymous": "vna",
-  "NameVariableClass": "vc",
-  "NameVariableGlobal": "vg",
-  "NameVariableInstance": "vi",
-  "NameVariableMagic": "vm",
+  "NameVariableAnonymous": "nva",
+  "NameVariableClass": "nvc",
+  "NameVariableGlobal": "nvg",
+  "NameVariableInstance": "nvi",
+  "NameVariableMagic": "nvm",
+  "NamePseudo": "np",
+  "None": "n",
   "Operator": "o",
   "OperatorWord": "ow",
+  "Other": "x",
   "Punctuation": "p",
   "Text": "t",
-  "TextWhitespace": "w",
+  "TextPunctuation": "tp",
+  "TextSymbol": "ts",
+  "TextWhitespace": "tw",
   "Token": "tok",
-  "TokenType": "unt",
-  "Punctuation": "p"
+  "TokenType": "unt"
 };
 
 /**

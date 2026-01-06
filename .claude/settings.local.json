@@ -71,7 +71,10 @@
       "mcp__playwright__browser_take_screenshot",
       "Bash(git merge:*)",
       "Bash(git -C /home/ralsina/code/tartrazine.js branch)",
-      "Skill(superpowers:using-superpowers)"
+      "Skill(superpowers:using-superpowers)",
+      "Bash(tartrazine:*)",
+      "Bash(npm run test:*)",
+      "Bash(npm run test:compare:*)"
     ],
     "deny": [],
     "ask": []

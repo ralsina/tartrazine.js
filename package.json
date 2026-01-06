@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node scripts/run-tests.js",
+    "test:html": "node scripts/run-html-tests.js",
+    "test:compare": "node scripts/compare-html-tests.js",
     "test:watch": "vitest --watch",
     "sync-lexers": "node scripts/sync-lexers.js",
     "import-tests": "node scripts/import-tartrazine-tests.js",
