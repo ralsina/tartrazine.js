@@ -8,9 +8,39 @@
     "test:watch": "vitest --watch",
     "sync-lexers": "node scripts/sync-lexers.js",
     "import-tests": "node scripts/import-tartrazine-tests.js",
-    "import-tests:all": "node scripts/import-tartrazine-tests.js all"
+    "import-tests:all": "node scripts/import-tartrazine-tests.js all",
+    "build": "npm run build:assets && rollup -c",
+    "build:assets": "node scripts/copy-assets.js",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/tartrazine.js",
+      "require": "./dist/tartrazine.umd.cjs",
+      "browser": "./dist/tartrazine.iife.js"
+    },
+    "./browser": {
+      "import": "./src/browser-exports.js"
+    }
+  },
+  "main": "./dist/tartrazine.umd.cjs",
+  "module": "./dist/tartrazine.js",
+  "browser": "./dist/tartrazine.iife.js",
+  "unpkg": "./dist/tartrazine.iife.js",
+  "jsdelivr": "./dist/tartrazine.iife.js",
+  "files": [
+    "dist/",
+    "assets/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-replace": "^6.0.3",
+    "rollup": "^4.55.1",
     "vitest": "^2.1.0"
   },
   "dependencies": {

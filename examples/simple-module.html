@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tartrazine.js - Simple Module Example</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .example {
+      margin: 2rem 0;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tartrazine.js - Simple Module Example</h1>
+  <p>This example shows the simplest way to use tartrazine.js with ES modules.</p>
+
+  <div class="example">
+    <h2>JavaScript</h2>
+    <pre id="js-output"></pre>
+  </div>
+
+  <div class="example">
+    <h2>Python</h2>
+    <pre id="py-output"></pre>
+  </div>
+
+  <div class="example">
+    <h2>Rust</h2>
+    <pre id="rust-output"></pre>
+  </div>
+
+  <script type="module">
+    import { highlight } from './dist/tartrazine.js';
+
+    // JavaScript example
+    const jsCode = `function greet(name) {
+  console.log(\`Hello, \${name}!\`);
+  return true;
+}
+
+greet('World');`;
+
+    // Python example
+    const pyCode = `def greet(name):
+    print(f"Hello, {name}!")
+    return True
+
+greet("Python")`;
+
+    // Rust example
+    const rustCode = `fn main() {
+    let name = "Rust";
+    println!("Hello, {}!", name);
+}
+
+main();`;
+
+    // Highlight code
+    document.getElementById('js-output').innerHTML =
+      await highlight(jsCode, 'javascript', 'github-dark');
+
+    document.getElementById('py-output').innerHTML =
+      await highlight(pyCode, 'python', 'monokai');
+
+    document.getElementById('rust-output').innerHTML =
+      await highlight(rustCode, 'rust', 'github');
+  </script>
+</body>
+</html>

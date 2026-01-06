@@ -10,6 +10,41 @@ const parser = new XMLParser({
 });
 
 /**
+ * Detect if running in browser environment
+ */
+const isBrowser = typeof window !== 'undefined';
+
+/**
+ * Get the base URL for loading assets
+ */
+function getAssetBase() {
+  if (isBrowser && window.__tartrazine_asset_base) {
+    return window.__tartrazine_asset_base;
+  }
+  return '';
+}
+
+/**
+ * Load XML file content
+ * Uses fetch() in browser, fs in Node.js
+ * @param {string} path - Path to XML file
+ * @returns {Promise<string>} XML content
+ */
+async function loadXmlFile(path) {
+  const fullPath = getAssetBase() + path;
+
+  if (isBrowser) {
+    const response = await fetch(fullPath);
+    if (!response.ok) {
+      throw new Error(`Failed to load ${path}: ${response.statusText}`);
+    }
+    return await response.text();
+  } else {
+    return readFileSync(fullPath, 'utf-8');
+  }
+}
+
+/**
  * Parse color from style string (e.g., "#f85149", "bold #ff7b72", "bg:#0d1117")
  * @param {string} styleStr - The style string
  * @returns {object} Parsed style properties
@@ -56,11 +91,11 @@ function parseStyle(styleStr) {
  * Load and parse a theme XML file
  * @param {string} themeName - Name of the theme (e.g., "github-dark")
  * @param {string} stylesDir - Directory containing theme XML files
- * @returns {object} Parsed theme with styles and style parents
+ * @returns {Promise<object>} Parsed theme with styles and style parents
  */
-export function loadTheme(themeName, stylesDir = 'styles') {
+export async function loadTheme(themeName, stylesDir = 'styles') {
   const xmlPath = join(stylesDir, `${themeName}.xml`);
-  const xmlContent = readFileSync(xmlPath, 'utf-8');
+  const xmlContent = await loadXmlFile(xmlPath);
 
   const parsed = parser.parse(xmlContent);
   const styleElement = parsed.style;

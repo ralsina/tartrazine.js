@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tartrazine.js - Web Component Example</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      color: #333;
+    }
+    .example {
+      margin: 2rem 0;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+    .controls {
+      margin: 1rem 0;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tartrazine.js - Web Component Example</h1>
+  <p>Using the <code>&lt;syntax-highlight&gt;</code> custom element.</p>
+
+  <div class="controls">
+    <button onclick="changeLanguage('javascript')">JavaScript</button>
+    <button onclick="changeLanguage('python')">Python</button>
+    <button onclick="changeLanguage('rust')">Rust</button>
+    <button onclick="changeLanguage('go')">Go</button>
+  </div>
+
+  <div class="example">
+    <h2>Default (GitHub Dark)</h2>
+    <syntax-highlight id="code-block" language="javascript" theme="github-dark">
+function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.log(fibonacci(10));
+    </syntax-highlight>
+  </div>
+
+  <div class="example">
+    <h2>With Line Numbers (Monokai)</h2>
+    <syntax-highlight language="python" theme="monokai" line-numbers>
+def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+    </syntax-highlight>
+  </div>
+
+  <div class="example">
+    <h2>Light Theme (GitHub)</h2>
+    <syntax-highlight language="rust" theme="github">
+fn main() {
+    let numbers = vec![1, 2, 3, 4, 5];
+    let sum: i32 = numbers.iter().sum();
+    println!("Sum: {}", sum);
+}
+    </syntax-highlight>
+  </div>
+
+  <script type="module">
+    import './dist/tartrazine.js';
+
+    // Listen for highlight events
+    document.addEventListener('highlighted', (event) => {
+      console.log('Code highlighted:', event.detail);
+    });
+
+    // Function to change language dynamically
+    window.changeLanguage = (lang) => {
+      const block = document.getElementById('code-block');
+      block.setAttribute('language', lang);
+
+      // Update code based on language
+      const examples = {
+        javascript: `function hello() {
+  console.log('Hello from JavaScript!');
+}`,
+        python: `def hello():
+    print('Hello from Python!')`,
+        rust: `fn main() {
+    println!("Hello from Rust!"); }`,
+        go: `func main() {
+    fmt.Println("Hello from Go!")
+}`
+      };
+
+      block.textContent = examples[lang];
+    };
+  </script>
+</body>
+</html>

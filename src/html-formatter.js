@@ -7,7 +7,8 @@ import { getTokenAbbreviation } from './token-abbreviations.js';
 export class HtmlFormatter {
   constructor(options = {}) {
     this.themeName = options.theme || 'github-dark';
-    this.theme = loadTheme(this.themeName);
+    // If theme is already loaded (object), use it, otherwise undefined (will load on demand)
+    this.theme = typeof options.theme === 'object' ? options.theme : null;
     this.classPrefix = options.classPrefix || '';
     this.lineNumbers = options.lineNumbers || false;
     this.linkableLineNumbers = options.linkableLineNumbers !== false;
@@ -22,12 +23,24 @@ export class HtmlFormatter {
   }
 
   /**
+   * Initialize the formatter (lazy load theme if needed)
+   * @returns {Promise<void>}
+   */
+  async init() {
+    if (!this.theme && this.themeName) {
+      this.theme = await loadTheme(this.themeName);
+    }
+  }
+
+  /**
    * Format tokens to HTML
    * @param {string} code - The source code
    * @param {Array} tokens - Array of tokens from the lexer
-   * @returns {string} HTML output
+   * @returns {Promise<string>} HTML output
    */
-  format(code, tokens) {
+  async format(code, tokens) {
+    // Ensure theme is loaded
+    await this.init();
     let output = '';
     let pre = '';
     let post = '';

@@ -1,5 +1,4 @@
-import { XMLParser } from 'fast-xml-parser';
-import { readFileSync } from 'fs';
+import { XMLParser } from 'https://esm.sh/fast-xml-parser@4.3.2';
 
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -8,52 +7,29 @@ const parser = new XMLParser({
   trimValues: false,
 });
 
-/**
- * Detect if running in browser environment
- */
-const isBrowser = typeof window !== 'undefined';
+// Cache for loaded lexers
+const lexerCache = new Map();
 
 /**
- * Get the base URL for loading assets
- * In browser, can be configured via setAssetBase()
- * Defaults to relative paths
- */
-function getAssetBase() {
-  if (isBrowser && window.__tartrazine_asset_base) {
-    return window.__tartrazine_asset_base;
-  }
-  return '';
-}
-
-/**
- * Load XML file content
- * Uses fetch() in browser, fs in Node.js
- * @param {string} path - Path to XML file
- * @returns {Promise<string>} XML content
- */
-async function loadXmlFile(path) {
-  const fullPath = getAssetBase() + path;
-
-  if (isBrowser) {
-    const response = await fetch(fullPath);
-    if (!response.ok) {
-      throw new Error(`Failed to load ${path}: ${response.statusText}`);
-    }
-    return await response.text();
-  } else {
-    return readFileSync(fullPath, 'utf-8');
-  }
-}
-
-/**
- * Load and parse a lexer XML file
+ * Load and parse a lexer XML file (browser-compatible)
  * @param {string} lexerName - Name of the lexer (e.g., 'bash')
  * @returns {Promise<Object>} Parsed lexer definition
  */
 export async function loadLexer(lexerName) {
-  // Use the synced lexers directory for deployment/packaging
-  const xmlPath = `lexers/${lexerName}.xml`;
-  const xmlContent = await loadXmlFile(xmlPath);
+  // Check cache first
+  if (lexerCache.has(lexerName)) {
+    return lexerCache.get(lexerName);
+  }
+
+  // Fetch the lexer XML file
+  const xmlPath = `public/lexers/${lexerName}.xml`;
+  const response = await fetch(xmlPath);
+
+  if (!response.ok) {
+    throw new Error(`Failed to load lexer "${lexerName}": ${response.statusText}`);
+  }
+
+  const xmlContent = await response.text();
 
   // Preprocess XML to handle duplicate attributes in <combined> and <push> elements
   // fast-xml-parser doesn't preserve duplicate attributes, so we need to
@@ -94,7 +70,12 @@ export async function loadLexer(lexerName) {
     }
   );
 
-  return parseLexerXML(preprocessed);
+  const lexerDef = parseLexerXML(preprocessed);
+
+  // Cache the parsed lexer
+  lexerCache.set(lexerName, lexerDef);
+
+  return lexerDef;
 }
 
 /**
