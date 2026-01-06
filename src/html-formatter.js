@@ -211,18 +211,18 @@ export class HtmlFormatter {
   }
 
   /**
-   * Get standalone HTML wrappers
+   * Get standalone HTML wrappers (without CSS - assumes user has CSS)
    * @returns {Array} [preHTML, postHTML]
    */
   getStandaloneWrappers() {
-    const css = this.generateCss();
     const template = this.template;
 
+    // Remove {{style_defs}} placeholder since we're not generating CSS
     if (template.includes('{{style_defs}}')) {
       const parts = template.split('{{style_defs}}');
       const bodyParts = parts[1].split('{{body}}');
       return [
-        parts[0] + css + bodyParts[0],
+        parts[0] + bodyParts[0],
         bodyParts[1] || ''
       ];
     } else {

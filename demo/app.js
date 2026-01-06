@@ -212,9 +212,6 @@ async function updateOutput() {
     // Generate HTML
     const html = formatTokens(code, collapsedTokens);
     elements.output.innerHTML = html;
-
-    // Inject CSS
-    injectThemeCSS();
   } catch (error) {
     showError(`Highlighting error: ${error.message}`);
   }
@@ -249,52 +246,6 @@ function getCssClass(tokenType) {
 
   const abbrev = getTokenAbbreviation(tokenType);
   return abbrev;
-}
-
-// Inject theme CSS
-function injectThemeCSS() {
-  // Remove old style tag if exists
-  const oldStyle = document.getElementById('theme-css');
-  if (oldStyle) {
-    oldStyle.remove();
-  }
-
-  // Generate CSS
-  let css = '<style id="theme-css">';
-  css += '#output pre { background: transparent; padding: 0; margin: 0; }';
-  css += '#output code { background: transparent; padding: 0; }';
-
-  for (const [tokenType, style] of Object.entries(state.theme.styles)) {
-    const className = getCssClass(tokenType);
-    css += `.${className} {`;
-
-    if (style.color) {
-      const color = style.color.startsWith('#') ? style.color : `#${style.color}`;
-      css += `color: ${color};`;
-    }
-    if (style.background) {
-      const bg = style.background.startsWith('#') ? style.background : `#${style.background}`;
-      css += `background-color: ${bg};`;
-    }
-    if (style.bold) {
-      css += `font-weight: 600;`;
-    }
-    if (style.italic) {
-      css += `font-style: italic;`;
-    }
-    if (style.underline) {
-      css += `text-decoration: underline;`;
-    }
-
-    css += '}';
-  }
-
-  css += '</style>';
-
-  // Inject CSS into head
-  const styleTag = document.createElement('div');
-  styleTag.innerHTML = css;
-  document.head.appendChild(styleTag.firstElementChild);
 }
 
 // Escape HTML
