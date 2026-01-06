@@ -22,7 +22,7 @@ export async function loadLexer(lexerName) {
   // fast-xml-parser doesn't preserve duplicate attributes, so we need to
   // convert <combined state="a" state="b"/> to <combined state="a,b"/>
   // and <push state="a" state="b"/> to <push state="a,b"/>
-  const preprocessed = xmlContent.replace(
+  let preprocessed = xmlContent.replace(
     /<(combined|push)\s+([^>]*?)>/g,
     (match, tagName, attrs) => {
       // Extract all state attributes
@@ -40,6 +40,20 @@ export async function loadLexer(lexerName) {
         return `<${tagName} state="${states.join(',')}" ${attrsWithoutStates}>`;
       }
       return match;
+    }
+  );
+
+  // Preprocess <bygroups> to add _order attribute to preserve element order
+  // fast-xml-parser groups elements by type, losing order. We add _order="0", _order="1", etc.
+  // to each child element so we can sort them later.
+  preprocessed = preprocessed.replace(
+    /<bygroups>([\s\S]*?)<\/bygroups>/g,
+    (match, content) => {
+      let order = 0;
+      const ordered = content.replace(/<(usingself|using|token)([^>]*)>/g, (m, tagName, attrs) => {
+        return `<${tagName} _order="${order++}"${attrs}>`;
+      });
+      return `<bygroups>${ordered}</bygroups>`;
     }
   );
 
@@ -91,6 +105,7 @@ function transformLexerDef(lexer) {
     mimeTypes: extractArray(config.mime_type),
     ensureNl: config.ensure_nl === 'true' || config.ensure_nl === true,
     caseInsensitive: config.case_insensitive === 'true' || config.case_insensitive === true,
+    dotAll: config.dot_all === 'true' || config.dot_all === true,
     states,
   };
 }
@@ -179,146 +194,49 @@ function parseRules(rules) {
       // Extract using elements
       const usings = Array.isArray(rule.bygroups.using) ? rule.bygroups.using : (rule.bygroups.using ? [rule.bygroups.using] : []);
 
-      // Merge them in the order they appear in the XML
-      // The XML parser groups by type, so we need to reconstruct order
-      // by looking at which elements exist
-      let tokenIndex = 0;
-      let usingselfIndex = 0;
-      let usingIndex = 0;
+      // Use the _order attribute added during preprocessing to preserve original order
+      // Collect all groups and sort by _order
+      const allGroups = [];
 
-      // For the function definition pattern, we know the order is:
-      // usingself, token, usingself, usingself, token
-      // This is fragile but works for the current C lexer
-      if (tokens.length === 2 && usingselfs.length === 3) {
-        groups.push({
-          type: 'usingself',
-          state: usingselfs[usingselfIndex++].state,
-        });
-        groups.push({
-          type: 'token',
-          tokenType: tokens[tokenIndex++].type,
-        });
-        groups.push({
-          type: 'usingself',
-          state: usingselfs[usingselfIndex++].state,
-        });
-        groups.push({
-          type: 'usingself',
-          state: usingselfs[usingselfIndex++].state,
-        });
-        groups.push({
-          type: 'token',
-          tokenType: tokens[tokenIndex++].type,
-        });
-      } else {
-        // For other cases, we need to preserve the order of token, usingself, and using elements
-        // Since the XML parser groups by type, we need a different approach
-        // We'll count how many total elements there are and iterate through them
+      // Add tokens
+      for (const token of tokens) {
+        allGroups.push({ ...token, _kind: 'token' });
+      }
 
-        // Count total actions (token + usingself + using)
-        const totalActions = tokens.length + usingselfs.length + usings.length;
+      // Add usingself elements
+      for (const usingself of usingselfs) {
+        allGroups.push({ ...usingself, _kind: 'usingself' });
+      }
 
-        // The problem is that the XML parser loses the original order
-        // We need to look at the actual XML to determine the order
-        // For now, we'll use a heuristic based on common patterns
+      // Add using elements
+      for (const using of usings) {
+        allGroups.push({ ...using, _kind: 'using' });
+      }
 
-        // Common pattern 0: using, token (e.g., mason line 81-86)
-        // Pattern: (.+?)(?:(?<=\n)(?=[%#]) |(?=<\/?[%&]) |(\\\n) |(?=\n?$))
-        // Actions: using (HTML), token (Operator)
-        if (totalActions === 2 && tokens.length === 1 && usings.length === 1) {
-          groups.push({
-            type: 'using',
-            lexer: usings[usingIndex++].lexer,
-          });
+      // Sort by _order attribute
+      allGroups.sort((a, b) => {
+        const orderA = parseInt(a._order || 0, 10);
+        const orderB = parseInt(b._order || 0, 10);
+        return orderA - orderB;
+      });
+
+      // Convert sorted elements to group actions
+      for (const item of allGroups) {
+        if (item._kind === 'token') {
           groups.push({
             type: 'token',
-            tokenType: tokens[tokenIndex++].type,
+            tokenType: item.type,
           });
-        }
-        // Common pattern 0b: usingself, token (e.g., C preprocessor)
-        // Pattern: ^(\s*(?:/[*].*?[*]/\s*)?)(#)
-        // Actions: usingself (root), token (CommentPreproc)
-        else if (totalActions === 2 && tokens.length === 1 && usingselfs.length === 1) {
+        } else if (item._kind === 'usingself') {
           groups.push({
             type: 'usingself',
-            state: usingselfs[usingselfIndex++].state,
+            state: item.state,
           });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-        }
-        // Common pattern 1: token, token, using (e.g., mason line 64-69)
-        // Pattern: (<%!?)(.*?)(%>)(?s)
-        // Actions: token (NameTag), using (Perl), token (NameTag)
-        else if (totalActions === 3 && tokens.length === 2 && usings.length === 1) {
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
+        } else if (item._kind === 'using') {
           groups.push({
             type: 'using',
-            lexer: usings[usingIndex++].lexer,
+            lexer: item.lexer,
           });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-        }
-        // Common pattern 2: token, token, token, using, token (e.g., mason line 36-43)
-        // Pattern: (<%\w+)(.*?)(>)(.*?)(</%\2\s*>)(?s)
-        // Actions: token, token, token, using (Perl), token
-        else if (totalActions === 5 && tokens.length === 4 && usings.length === 1) {
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-          groups.push({
-            type: 'using',
-            lexer: usings[usingIndex++].lexer,
-          });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-        }
-        // Common pattern 3: token, using, token (e.g., mason line 45-51)
-        // Pattern: (<&[^|])(.*?)(,.*?)?(&>)(?s)
-        // Actions: token, token, using, token
-        else if (totalActions === 4 && tokens.length === 3 && usings.length === 1) {
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-          groups.push({
-            type: 'using',
-            lexer: usings[usingIndex++].lexer,
-          });
-          groups.push({
-            type: 'token',
-            tokenType: tokens[tokenIndex++].type,
-          });
-        }
-        // For all other cases, just add all tokens (simpler patterns)
-        else {
-          for (const token of tokens) {
-            groups.push({
-              type: 'token',
-              tokenType: token.type,
-            });
-          }
         }
       }
 

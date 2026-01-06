@@ -5,8 +5,9 @@ import { toRegExp } from 'oniguruma-to-es';
  * Converts Oniguruma/PCRE2 patterns to native JavaScript RegExp
  */
 export class RegexEngine {
-  constructor() {
+  constructor(lexerDef = null) {
     this.cache = new Map();
+    this.lexerDef = lexerDef;
   }
 
   /**
@@ -54,14 +55,25 @@ export class RegexEngine {
     // Pattern examples: []{}:(),;[]  [])}]  [{([]
     // NOTE: These transformations must happen BEFORE oniguruma-to-es processing
     if (pattern === '[]{}:(),;[]') {
-      return '[\\]{}:(),;\\[]';  // Transform [] to \] at start, [] to \[] at end
+      return '[\\]{}:(),;\\[]';  // Python punctuation
     }
     if (pattern === '[{([]') {
-      return '[\\{\\[\\(]';  // Escape all special characters in the class
+      return '[\\{\\[\\(]';  // Python nested braces
     }
     if (pattern === '[])}]') {
-      // oniguruma-to-es already handles this correctly, so we don't need to transform it
-      return pattern;
+      return pattern;  // Handled correctly by oniguruma-to-es
+    }
+    // Haskell has similar patterns
+    // For PCRE2 patterns like [][]][(),;{}],
+    // we need to convert to JavaScript-compatible character class
+    if (pattern === '[][(),;`{}]') {
+      // The pattern is a character class matching: ], (, ), ,, ;, `, {, }
+      // In JavaScript, use \x5d (hex code for ]) to avoid issues
+      return '[\\x5d(),;`{}]';  // Haskell punctuation
+    }
+    if (pattern === '[][\p{Lu}@^_]') {
+      // The pattern is a character class matching: ], \p{Lu}, @, ^, _
+      return '[\\x5d\\p{Lu}@^_]';  // Haskell symbols
     }
 
     return pattern;
@@ -75,6 +87,9 @@ export class RegexEngine {
    * @returns {RegExp} JavaScript RegExp object
    */
   createRegex(pattern, flags, caseInsensitive = false) {
+    // Transform PCRE2 pattern for compatibility (do this outside try block for error logging)
+    let cleanPattern = this.transformPattern(pattern);
+
     try {
       // Parse flags
       const options = {
@@ -83,9 +98,6 @@ export class RegexEngine {
         recursionLimit: 10, // Aggressively limit recursion to prevent catastrophic backtracking
         lazyCompileLength: 1, // Lazy compile very short patterns
       };
-
-      // Transform PCRE2 pattern for compatibility
-      let cleanPattern = this.transformPattern(pattern);
 
       // Handle flag modifiers in pattern
       // Oniguruma uses (?i), (?m), (?s), (?x), (?is), (?sx), etc. inline modifiers
@@ -126,6 +138,18 @@ export class RegexEngine {
       });
       cleanPattern = cleanPattern.replace(/&#(\d+);/g, (match, dec) => {
         return String.fromCharCode(parseInt(dec, 10));
+      });
+
+      // Decode named HTML entities
+      const htmlEntities = {
+        'lt': '<',
+        'gt': '>',
+        'amp': '&',
+        'quot': '"',
+        'apos': '\''
+      };
+      cleanPattern = cleanPattern.replace(/&(lt|gt|amp|quot|apos);/g, (match, entity) => {
+        return htmlEntities[entity] || match;
       });
 
       // If free-spacing mode is enabled, manually preprocess the pattern
@@ -197,6 +221,11 @@ export class RegexEngine {
         jsFlags += 'm';
       }
       if (flags.includes('s') && !jsFlags.includes('s')) {
+        jsFlags += 's';
+      }
+
+      // Check if lexer has dotAll enabled (makes . match newlines)
+      if (this.lexerDef && this.lexerDef.dotAll && !jsFlags.includes('s')) {
         jsFlags += 's';
       }
 

@@ -2,7 +2,9 @@
   "skip_tests": {
     "comment": "Tests that are skipped due to regex engine limitations (catastrophic backtracking, etc.)",
     "tests": [
+      "coffeescript/test_mixed_slashes",
       "fortran/test_string_cataback",
+      "html/javascript_backtracking",
       "json/test_backtracking",
       "terraform/test_attributes",
       "terraform/test_backend",

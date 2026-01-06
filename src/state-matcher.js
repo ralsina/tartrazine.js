@@ -8,7 +8,7 @@ import { Lexer } from './lexer.js';
 export class StateMatcher {
   constructor(lexerDef) {
     this.lexerDef = lexerDef;
-    this.regexEngine = new RegexEngine();
+    this.regexEngine = new RegexEngine(lexerDef);
     this.compiledRules = new Map();
   }
 
