@@ -48,12 +48,20 @@ export class RegexEngine {
       return transformedRustPattern;
     }
 
-    // The Python lexer has pattern "[]{}:(),;[]" where [] matches literal ]
+    // The Python lexer has patterns where [] is used to match literal ] and [
     // In PCRE2, [] at the start or end of a character class matches a literal ]
-    // oniguruma-to-es interprets [] as an empty character class (error).
-    // We need to escape the ] characters to make it compatible.
+    // JavaScript doesn't allow empty character classes, so we need to transform these.
+    // Pattern examples: []{}:(),;[]  [])}]  [{([]
+    // NOTE: These transformations must happen BEFORE oniguruma-to-es processing
     if (pattern === '[]{}:(),;[]') {
-      return '[\\]{}:(),;\\[]';
+      return '[\\]{}:(),;\\[]';  // Transform [] to \] at start, [] to \[] at end
+    }
+    if (pattern === '[{([]') {
+      return '[\\{\\[\\(]';  // Escape all special characters in the class
+    }
+    if (pattern === '[])}]') {
+      // oniguruma-to-es already handles this correctly, so we don't need to transform it
+      return pattern;
     }
 
     return pattern;

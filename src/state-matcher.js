@@ -255,7 +255,17 @@ export class StateMatcher {
       const includeActions = rule.actions.filter(a => a.type === 'include');
       const nonIncludeActions = rule.actions.filter(a => a.type !== 'include');
 
-      // Expand includes from referenced states
+      // If there's a pattern and non-include actions, compile and add the rule FIRST
+      // Rules defined in the current state take priority over included states
+      if (nonIncludeActions.length > 0) {
+        expanded.push({
+          regex: rule.pattern ? this.regexEngine.compile(rule.pattern, '', this.lexerDef.caseInsensitive) : null,
+          actions: rule.actions,
+        });
+      }
+
+      // THEN expand includes from referenced states
+      // These will be checked after the current state's rules
       for (const includeAction of includeActions) {
         const includedState = this.lexerDef.states[includeAction.state];
         if (includedState) {
@@ -266,15 +276,6 @@ export class StateMatcher {
             expanded.push(...includedRules);
           }
         }
-      }
-
-      // If there's a pattern and non-include actions, compile and add the rule
-      // If there's no pattern, it's a zero-length match rule (should match at any position)
-      if (nonIncludeActions.length > 0) {
-        expanded.push({
-          regex: rule.pattern ? this.regexEngine.compile(rule.pattern, '', this.lexerDef.caseInsensitive) : null,
-          actions: rule.actions,
-        });
       }
     }
 
