@@ -235,6 +235,19 @@ function parseRules(rules) {
             tokenType: tokens[tokenIndex++].type,
           });
         }
+        // Common pattern 0b: usingself, token (e.g., C preprocessor)
+        // Pattern: ^(\s*(?:/[*].*?[*]/\s*)?)(#)
+        // Actions: usingself (root), token (CommentPreproc)
+        else if (totalActions === 2 && tokens.length === 1 && usingselfs.length === 1) {
+          groups.push({
+            type: 'usingself',
+            state: usingselfs[usingselfIndex++].state,
+          });
+          groups.push({
+            type: 'token',
+            tokenType: tokens[tokenIndex++].type,
+          });
+        }
         // Common pattern 1: token, token, using (e.g., mason line 64-69)
         // Pattern: (<%!?)(.*?)(%>)(?s)
         // Actions: token (NameTag), using (Perl), token (NameTag)
