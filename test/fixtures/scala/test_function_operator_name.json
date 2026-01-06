@@ -1,0 +1,54 @@
+[
+  {
+    "type": "Keyword",
+    "value": "def"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "<"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "y"
+  },
+  {
+    "type": "Keyword",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "String"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Keyword",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "Boolean"
+  }
+]

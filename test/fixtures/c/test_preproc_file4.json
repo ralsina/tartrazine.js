@@ -1,0 +1,22 @@
+[
+  {
+    "type": "CommentMultiline",
+    "value": "/* Comment */"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "/* Another */"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "#define FOO 0\n"
+  }
+]

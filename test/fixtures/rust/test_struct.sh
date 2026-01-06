@@ -1,0 +1,1 @@
+struct X { x: u32 }

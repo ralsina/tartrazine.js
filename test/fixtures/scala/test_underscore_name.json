@@ -1,0 +1,30 @@
+[
+  {
+    "type": "Keyword",
+    "value": "val"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "head"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameClass",
+    "value": "_head"
+  }
+]

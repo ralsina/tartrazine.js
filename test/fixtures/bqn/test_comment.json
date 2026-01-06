@@ -1,0 +1,30 @@
+[
+  {
+    "type": "LiteralStringChar",
+    "value": "'#'"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "-"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "  "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "#This is the comment"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Keyword",
+    "value": "revision"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralDate",
+    "value": "2020-03-08"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  }
+]

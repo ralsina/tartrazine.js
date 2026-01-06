@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Error",
+    "value": "'"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "//"
+  },
+  {
+    "type": "Error",
+    "value": "'"
+  }
+]

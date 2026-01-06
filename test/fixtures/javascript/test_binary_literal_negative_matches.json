@@ -1,0 +1,54 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test text that should **not** be tokenized as binary literals.\n"
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "0b0"
+  },
+  {
+    "type": "NameOther",
+    "value": "N"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "bb"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "b2"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

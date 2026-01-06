@@ -1,0 +1,46 @@
+[
+  {
+    "type": "KeywordDeclaration",
+    "value": "func"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "abc"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "arg"
+  },
+  {
+    "type": "Punctuation",
+    "value": "):"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "print"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"Hello, World!\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

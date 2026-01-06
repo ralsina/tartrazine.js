@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Literal",
+    "value": "@("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Literal",
+    "value": ")"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

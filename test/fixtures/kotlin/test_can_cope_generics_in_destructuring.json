@@ -1,0 +1,82 @@
+[
+  {
+    "type": "Keyword",
+    "value": "val"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "("
+  },
+  {
+    "type": "NameProperty",
+    "value": "a"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "List"
+  },
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "Name",
+    "value": "Something"
+  },
+  {
+    "type": "Punctuation",
+    "value": ">,"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "Set"
+  },
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "Name",
+    "value": "Wobble"
+  },
+  {
+    "type": "Punctuation",
+    "value": ">)"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  }
+]

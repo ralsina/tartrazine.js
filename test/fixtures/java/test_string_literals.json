@@ -1,0 +1,54 @@
+[
+  {
+    "type": "LiteralString",
+    "value": "\"\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"abc\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"ひらがな\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"123\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\\\\\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\\t\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"\\\"\""
+  }
+]

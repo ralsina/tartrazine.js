@@ -1,0 +1,46 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test literals that should be tokenized as octal literals.\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "017"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "071"
+  },
+  {
+    "type": "NameOther",
+    "value": "n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "0o11"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "0O77"
+  },
+  {
+    "type": "NameOther",
+    "value": "n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

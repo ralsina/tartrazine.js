@@ -1,0 +1,1 @@
+(sum(rate(metric_test_app{app='turtle',proc='web'}[2m])) by(node))

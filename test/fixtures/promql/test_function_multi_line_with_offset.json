@@ -1,0 +1,218 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "label_replace"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "avg"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "by"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "instance"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n        "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "irate"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "node_cpu_seconds_total"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameLabel",
+    "value": "mode"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "idle"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\"}["
+  },
+  {
+    "type": "LiteralString",
+    "value": "5m"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "offset"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "3s"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "*"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "100"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "device"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "cpu"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "instance"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": ".*"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  }
+]

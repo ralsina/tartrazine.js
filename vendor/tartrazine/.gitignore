@@ -1,0 +1,18 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
+chroma/
+pygments/
+shard.lock
+.vscode/
+.crystal/
+venv/
+.croupier
+coverage/
+run_tests
+aur-tartrazine/
+
+# We use the internal crystal lexer
+lexers/crystal.xml

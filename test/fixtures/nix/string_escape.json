@@ -1,0 +1,198 @@
+[
+  {
+    "type": "LiteralStringSingle",
+    "value": "''\n  "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "''\\t"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "''\\n"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "''\\r"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "'''"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "''$"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": " '\n''"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\"\\$"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "builtins"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "toString"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "maxArgIndex"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"cp "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "$(nix-build -A "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "Name",
+    "value": "attr"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": ")"
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "$0"
+  },
+  {
+    "type": "LiteralStringEscape",
+    "value": "\\\""
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": " > /dev/null\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"$\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "#"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "''$'' #\n\n\" \\ \"\n\n''"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "''\\ ''"
+  }
+]

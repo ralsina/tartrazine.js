@@ -1,0 +1,102 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "variable"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"aws_region\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "description"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"AWS region to launch servers.\""
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "default"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"us-west-2\""
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "somevar"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "true"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

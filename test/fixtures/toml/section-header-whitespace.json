@@ -1,0 +1,46 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "foo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "bar"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# whitespace allowed in table headers"
+  }
+]

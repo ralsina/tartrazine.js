@@ -1,0 +1,102 @@
+[
+  {
+    "type": "NameAttribute",
+    "value": "lock"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "addq"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameConstant",
+    "value": "$0"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "/* comments */"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameVariable",
+    "value": "%rsp"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "/*\n// comments\n*/"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "xorq"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "%rax"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "%rax"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "//"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameConstant",
+    "value": "comments"
+  }
+]

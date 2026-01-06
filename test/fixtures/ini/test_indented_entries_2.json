@@ -1,0 +1,30 @@
+[
+  {
+    "type": "Keyword",
+    "value": "[section]"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "key1"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "value1\n    key2 = value2"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "NameVariable",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "=("
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "2"
+  },
+  {
+    "type": "Text",
+    "value": " 3"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  }
+]

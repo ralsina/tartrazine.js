@@ -1,0 +1,14 @@
+[
+  {
+    "type": "LiteralNumberFloat",
+    "value": "1."
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "Name",
+    "value": "x"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "type": "KeywordNamespace",
+    "value": "Check"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "α"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "≻"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "β"
+  },
+  {
+    "type": "Operator",
+    "value": ")."
+  }
+]

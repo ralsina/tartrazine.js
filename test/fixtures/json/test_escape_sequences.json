@@ -1,0 +1,146 @@
+[
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\\"\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\\\\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\/\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\b\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\f\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\n\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\r\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\t\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\u0123\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\u4567\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\u89ab\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\ucdef\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\uABCD\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\uEF01\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "// Incomplete sequences\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\uz\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\u1z\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\u12z\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\u123z\""
+  }
+]

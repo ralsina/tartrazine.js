@@ -1,0 +1,86 @@
+[
+  {
+    "type": "Keyword",
+    "value": "if"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": ">"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "100"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "disp"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralString",
+    "value": "'x > 100'"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "else"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "disp"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralString",
+    "value": "'x < 100'"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  }
+]

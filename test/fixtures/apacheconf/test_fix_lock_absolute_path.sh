@@ -1,0 +1,1 @@
+LockFile /var/lock/apache2/accept.lock

@@ -1,0 +1,190 @@
+[
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1234"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"foo\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# 1234 is a name"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "foo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1234"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# 1234 is a number"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "foo2"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1234"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# number"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1234"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"foo\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "foo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1234"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# name then number"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  }
+]

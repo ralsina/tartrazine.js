@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Literal",
+    "value": "@("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "YES"
+  },
+  {
+    "type": "Literal",
+    "value": ")"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

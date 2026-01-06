@@ -1,0 +1,14 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "LockFile"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringOther",
+    "value": "/var/lock/apache2/accept.lock"
+  }
+]

@@ -1,0 +1,1 @@
+metric_test_app{status!~'(4|5)..'}[2m]

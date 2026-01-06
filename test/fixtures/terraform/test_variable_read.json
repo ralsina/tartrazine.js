@@ -1,0 +1,62 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "provider"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"aws\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "region"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "var"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "aws_region"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

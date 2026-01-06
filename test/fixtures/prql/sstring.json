@@ -1,0 +1,10 @@
+[
+  {
+    "type": "LiteralStringAffix",
+    "value": "s"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"version()\""
+  }
+]

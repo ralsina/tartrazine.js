@@ -1,0 +1,30 @@
+[
+  {
+    "type": "Keyword",
+    "value": "val"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "open"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "true"
+  }
+]

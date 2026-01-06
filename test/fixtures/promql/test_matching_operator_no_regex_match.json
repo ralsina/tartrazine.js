@@ -1,0 +1,38 @@
+[
+  {
+    "type": "NameVariable",
+    "value": "metric_test_app"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameLabel",
+    "value": "status"
+  },
+  {
+    "type": "Operator",
+    "value": "!~"
+  },
+  {
+    "type": "Punctuation",
+    "value": "'"
+  },
+  {
+    "type": "LiteralString",
+    "value": "(4|5).."
+  },
+  {
+    "type": "Punctuation",
+    "value": "'}["
+  },
+  {
+    "type": "LiteralString",
+    "value": "2m"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  }
+]

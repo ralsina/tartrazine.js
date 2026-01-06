@@ -1,0 +1,294 @@
+[
+  {
+    "type": "CommentMultiline",
+    "value": "#>"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "This"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "command"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "looks"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "for"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "player"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "with"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "10"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "hp"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "and"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "prints"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDoc",
+    "value": "message"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "#"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@param"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "-"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@s"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentMultiline",
+    "value": "player"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "execute"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "as"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "NameAttribute",
+    "value": "name"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"rx\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "nbt"
+  },
+  {
+    "type": "Punctuation",
+    "value": "={"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Health"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "10.0f"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "run"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": " tellraw"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "\"text\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"this is my cool command\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "  "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# epic"
+  }
+]

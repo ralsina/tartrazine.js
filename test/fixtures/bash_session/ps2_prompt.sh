@@ -1,0 +1,3 @@
+$ ls\
+> /does/not/exist
+ls: cannot access ...

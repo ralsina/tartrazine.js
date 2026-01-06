@@ -1,0 +1,1 @@
+def ::(xs: List[T]): List[T] = ::(x, xs)

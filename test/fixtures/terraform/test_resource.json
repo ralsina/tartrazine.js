@@ -1,0 +1,598 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "resource"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"aws_internet_gateway\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"base_igw\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "vpc_id"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "aws_vpc"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "something"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "id"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "tags"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "Name"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"igw-"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "var"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "something"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "-"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "var"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "something"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "resource"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"aws_security_group\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"allow_tls\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "name"
+  },
+  {
+    "type": "Text",
+    "value": "        "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"allow_tls\""
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "description"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"Allow TLS inbound traffic\""
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "vpc_id"
+  },
+  {
+    "type": "Text",
+    "value": "      "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "aws_vpc"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "main"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "id"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "\n\n  # Ingress rules\n"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "NameOther",
+    "value": "ingress"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "description"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"TLS from VPC\""
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "from_port"
+  },
+  {
+    "type": "Text",
+    "value": "   "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "443"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "to_port"
+  },
+  {
+    "type": "Text",
+    "value": "     "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "443"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "\n\n  # Egress rules\n"
+  },
+  {
+    "type": "Text",
+    "value": "  "
+  },
+  {
+    "type": "NameOther",
+    "value": "egress"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "from_port"
+  },
+  {
+    "type": "Text",
+    "value": "   "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "to_port"
+  },
+  {
+    "type": "Text",
+    "value": "     "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "protocol"
+  },
+  {
+    "type": "Text",
+    "value": "    "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"-1\""
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "cidr_blocks"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"0.0.0.0/0\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n  "
+  },
+  {
+    "type": "NameOther",
+    "value": "tags"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "NameOther",
+    "value": "Name"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"allow_tls\""
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

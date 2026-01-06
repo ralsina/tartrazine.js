@@ -1,0 +1,10 @@
+[
+  {
+    "type": "CommentMultiline",
+    "value": "/* foo */"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

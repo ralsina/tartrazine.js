@@ -1,0 +1,1 @@
+signal sig (arg1, arg2)

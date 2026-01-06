@@ -1,0 +1,326 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "NameOther",
+    "value": "strings"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "basic-string"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"I'm a basic string. I can contain 'single quotes', \\u0055nicode escapes \\U0001f61b \\U0001F61B, \\\"escaped\\\" double quotes, \\n and \\t more.\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "literal-string"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "'I am literal string. Escapes like \\this have no effect on me. I can contain \"double quotes\".'"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "multiline-basic-string"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\"\"\nI'm a multiline basic string.\nI can span several lines and contain 'single' and \""
+  },
+  {
+    "type": "NameOther",
+    "value": "double"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" quotes\nas well as \\u0055nicode escapes. Line continuations \\\n   work too.\n\"\"\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "multiline-literal-string"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "'''\nI'"
+  },
+  {
+    "type": "NameOther",
+    "value": "m"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"multiline\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "'literal'"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "string"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameOther",
+    "value": "Escapes"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "like"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "\\"
+  },
+  {
+    "type": "NameOther",
+    "value": "this"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "have"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "no"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "effect"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "on"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "me"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "Neither"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "does"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "this"
+  },
+  {
+    "type": "Error",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "\\"
+  },
+  {
+    "type": "Text",
+    "value": "\n   "
+  },
+  {
+    "type": "NameOther",
+    "value": "it"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "is"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "not"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "line"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "continuation"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "''"
+  },
+  {
+    "type": "Error",
+    "value": "'"
+  }
+]

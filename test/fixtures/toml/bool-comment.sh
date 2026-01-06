@@ -1,0 +1,1 @@
+foo = true # comment used to prevent bool from being recognized

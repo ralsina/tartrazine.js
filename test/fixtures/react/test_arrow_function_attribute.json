@@ -1,0 +1,70 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "NameTag",
+    "value": "button"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "onClick"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameOther",
+    "value": "e"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "=>"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameOther",
+    "value": "e"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "preventDefault"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "()}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "/>"
+  }
+]

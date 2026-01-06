@@ -1,0 +1,158 @@
+[
+  {
+    "type": "NameDecorator",
+    "value": "@generated"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "function"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@."
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@~"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@±"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@mymacro"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameDecorator",
+    "value": "@+¹ᵀ"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  }
+]

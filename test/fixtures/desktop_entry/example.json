@@ -1,0 +1,258 @@
+[
+  {
+    "type": "Keyword",
+    "value": "[Desktop Entry]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Version"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "1.0"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Type"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "Application"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Name"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "Foo Viewer"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Comment"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "The best viewer for Foo objects available!"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Comment"
+  },
+  {
+    "type": "NameNamespace",
+    "value": "[fr]"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "Le meilleur visionneur d'objets Foo disponible !"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "TryExec"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "fooview"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Exec"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "fooview %F"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Icon"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "fooview"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "MimeType"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "image/x-foo;"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Actions"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "Gallery;Create;"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "[Desktop Action Gallery]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Exec"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "fooview --gallery"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Name"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "Browse Gallery"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "[Desktop Action Create]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Exec"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "fooview --create-new"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "Name"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "Create a new Foo!"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "Error",
+    "value": "Icon=fooview-new"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "type": "KeywordDeclaration",
+    "value": "DIM"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariableGlobal",
+    "value": "x"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariableGlobal",
+    "value": "x"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "RIGHT$"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"abc\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberIntegerLong",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

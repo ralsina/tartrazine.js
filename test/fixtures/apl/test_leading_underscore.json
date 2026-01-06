@@ -1,0 +1,74 @@
+[
+  {
+    "type": "NameVariable",
+    "value": "_op_"
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "←"
+  },
+  {
+    "type": "KeywordType",
+    "value": "{"
+  },
+  {
+    "type": "NameVariable",
+    "value": "_"
+  },
+  {
+    "type": "KeywordDeclaration",
+    "value": "←"
+  },
+  {
+    "type": "NameBuiltinPseudo",
+    "value": "⍺"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltinPseudo",
+    "value": "⍵"
+  },
+  {
+    "type": "Punctuation",
+    "value": "⋄("
+  },
+  {
+    "type": "NameBuiltinPseudo",
+    "value": "⍺⍺"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltinPseudo",
+    "value": "⍺"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "NameBuiltinPseudo",
+    "value": "⍵⍵"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltinPseudo",
+    "value": "⍵"
+  },
+  {
+    "type": "KeywordType",
+    "value": "}"
+  }
+]

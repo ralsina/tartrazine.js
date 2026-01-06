@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Literal",
+    "value": "@("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Literal",
+    "value": ")"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameTag",
+    "value": "\"a//b\""
+  },
+  {
+    "type": "CommentSingle",
+    "value": "//C1\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "123"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "/////C2\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Error",
+    "value": "/**"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "/"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "**/"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameTag",
+    "value": "\"a /**/ b\""
+  },
+  {
+    "type": "Error",
+    "value": "/*"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Error",
+    "value": "*/"
+  },
+  {
+    "type": "Punctuation",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "123"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "// Invalid comments\n"
+  },
+  {
+    "type": "Error",
+    "value": "/"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Error",
+    "value": "/"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Error",
+    "value": "/"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\""
+  },
+  {
+    "type": "Error",
+    "value": "/"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "// Unclosed\n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\""
+  },
+  {
+    "type": "Error",
+    "value": "/**"
+  }
+]

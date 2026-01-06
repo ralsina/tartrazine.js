@@ -1,0 +1,10 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "Example"
+  },
+  {
+    "type": "Text",
+    "value": "\nServerName localhost"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Name",
+    "value": "e12"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Name",
+    "value": "e"
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "34"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Name",
+    "value": "e"
+  },
+  {
+    "type": "Operator",
+    "value": "-"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "56"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Name",
+    "value": "e12f"
+  }
+]

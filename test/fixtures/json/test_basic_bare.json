@@ -1,0 +1,74 @@
+[
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"foo\""
+  },
+  {
+    "type": "Error",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"bar\""
+  },
+  {
+    "type": "Error",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"foo2\""
+  },
+  {
+    "type": "Error",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  }
+]

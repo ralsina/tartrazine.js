@@ -1,0 +1,1 @@
+int m21=((result_0*0+result_1*/*0<-----*/1)%mod+mod)%mod;

@@ -1,0 +1,14 @@
+[
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Error",
+    "value": "?"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "10"
+  }
+]

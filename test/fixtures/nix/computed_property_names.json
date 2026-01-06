@@ -1,0 +1,162 @@
+[
+  {
+    "type": "Keyword",
+    "value": "let"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Name",
+    "value": "bar"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"bar\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "in"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Name",
+    "value": "foo"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "Name",
+    "value": "bar"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Name",
+    "value": "foo"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "Name",
+    "value": "bar"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"bar\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

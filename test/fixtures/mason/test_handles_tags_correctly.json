@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Error",
+    "value": "<"
+  },
+  {
+    "type": "Text",
+    "value": "%class>\nhas 'foo';\nhas 'bar' => (required => 1);\nhas 'baz' => (isa => 'Int', default => 17);\n"
+  },
+  {
+    "type": "Error",
+    "value": "<"
+  },
+  {
+    "type": "Text",
+    "value": "/%class>"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Error",
+    "value": "?"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "10"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "type": "NameClass",
+    "value": "delta"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "           "
+  },
+  {
+    "type": "Keyword",
+    "value": "A"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "      "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "192.0.2.4"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "; comment"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n"
+  },
+  {
+    "type": "NameClass",
+    "value": "delta2"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "           "
+  },
+  {
+    "type": "Keyword",
+    "value": "A"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "      "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "192.0.2.5"
+  }
+]

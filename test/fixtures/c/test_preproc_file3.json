@@ -1,0 +1,18 @@
+[
+  {
+    "type": "NameFunction",
+    "value": "foo"
+  },
+  {
+    "type": "Punctuation",
+    "value": "();"
+  },
+  {
+    "type": "Text",
+    "value": "\n "
+  },
+  {
+    "type": "CommentPreproc",
+    "value": "#define FOO 0\n"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test text that should **not** be tokenized as integer literals.\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "NameOther",
+    "value": "N"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "1.0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

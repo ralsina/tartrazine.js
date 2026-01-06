@@ -1,0 +1,118 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "BEGIN"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameOther",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "NameOther",
+    "value": "b"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "6"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "print"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameOther",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "=="
+  },
+  {
+    "type": "NameOther",
+    "value": "b"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Error",
+    "value": "?"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"a==b\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"a!=b\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "NameOther",
+    "value": "x"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

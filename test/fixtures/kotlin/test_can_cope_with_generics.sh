@@ -1,0 +1,1 @@
+inline fun <reified T : ContractState> VaultService.queryBy(): Vault.Page<T> {

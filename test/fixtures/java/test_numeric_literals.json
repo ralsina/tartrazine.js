@@ -1,0 +1,118 @@
+[
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5L"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "9__542_72l"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0xbEEf"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0X9_A"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "0_35"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "01"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "0b0___101_0"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0."
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".7_17F"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "3e-1_3d"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "1f"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "6_01.9e+3"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0x.1Fp3"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0XEP8D"
+  }
+]

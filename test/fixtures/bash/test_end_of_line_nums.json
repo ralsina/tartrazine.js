@@ -1,0 +1,38 @@
+[
+  {
+    "type": "NameVariable",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "b"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "2"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# comment"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "type": "NameFunction",
+    "value": "Ambiv"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Text",
+    "value": "←"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "{"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "⟨"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": ","
+  },
+  {
+    "type": "Name",
+    "value": "𝕩"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "⟩"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "⟨"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "2"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": ","
+  },
+  {
+    "type": "Name",
+    "value": "𝕨"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": ","
+  },
+  {
+    "type": "Name",
+    "value": "𝕩"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "⟩"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "}"
+  }
+]

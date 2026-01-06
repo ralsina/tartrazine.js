@@ -1,0 +1,62 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "NameOther",
+    "value": "table"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "header"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "with"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "some"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"strings\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "NameOther",
+    "value": "and"
+  },
+  {
+    "type": "Punctuation",
+    "value": "."
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"escape\\nsequences\\u263a\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  }
+]

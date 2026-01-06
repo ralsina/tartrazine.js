@@ -1,0 +1,74 @@
+[
+  {
+    "type": "KeywordPseudo",
+    "value": "⟨"
+  },
+  {
+    "type": "NameFunction",
+    "value": "×"
+  },
+  {
+    "type": "Operator",
+    "value": "˜"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": ","
+  },
+  {
+    "type": "NameFunction",
+    "value": "√"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "⟩"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "{"
+  },
+  {
+    "type": "NameFunction",
+    "value": "𝕎"
+  },
+  {
+    "type": "Name",
+    "value": "𝕩"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "}"
+  },
+  {
+    "type": "Operator",
+    "value": "⌜"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "‿"
+  },
+  {
+    "type": "Error",
+    "value": "4"
+  },
+  {
+    "type": "KeywordPseudo",
+    "value": "‿"
+  },
+  {
+    "type": "Error",
+    "value": "9"
+  }
+]

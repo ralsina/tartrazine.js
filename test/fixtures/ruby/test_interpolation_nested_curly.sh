@@ -1,0 +1,1 @@
+"A#{ (3..5).group_by { |x| x/2}.map do |k,v| "#{k}" end.join }" + "Z"

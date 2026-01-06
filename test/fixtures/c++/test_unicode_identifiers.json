@@ -1,0 +1,354 @@
+[
+  {
+    "type": "Keyword",
+    "value": "namespace"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝐨𝐩𝐭𝐢𝐨𝐧"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "KeywordType",
+    "value": "int"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "_hello"
+  },
+  {
+    "type": "Punctuation",
+    "value": "();"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "KeywordType",
+    "value": "int"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "cześć"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "class"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝐨𝐩𝐭𝐢𝐨𝐧𝐬 "
+  },
+  {
+    "type": "NameClass",
+    "value": "final"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Error",
+    "value": "𝐨𝐩𝐭𝐢𝐨𝐧𝐬"
+  },
+  {
+    "type": "Punctuation",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Error",
+    "value": "爴"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": "\n      "
+  },
+  {
+    "type": "KeywordType",
+    "value": "int"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝐨𝐩𝐭𝐢𝐨𝐧"
+  },
+  {
+    "type": "Operator",
+    "value": "::"
+  },
+  {
+    "type": "Name",
+    "value": "hello"
+  },
+  {
+    "type": "Punctuation",
+    "value": "();"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "};"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n  "
+  },
+  {
+    "type": "Keyword",
+    "value": "static"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝐨𝐩𝐭𝐢𝐨𝐧𝐬"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝔡𝔢𝔣𝔞𝔲𝔩𝔱"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Keyword",
+    "value": "static"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝐨𝐩𝐭𝐢𝐨𝐧𝐬"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "𝔢𝔵𝔠𝔢𝔭𝔱𝔦𝔬𝔫𝔰"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "};"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "enum"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "class"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "ⅭⅤ"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "red"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "green"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "15"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "blue"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "};"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

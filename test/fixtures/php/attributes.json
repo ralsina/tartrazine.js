@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Operator",
+    "value": "<?"
+  },
+  {
+    "type": "NameOther",
+    "value": "php"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "#[Attribute]\n#[Attribute(true)]\n#[Attribute, Attribute]\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "class"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameClass",
+    "value": "Extra"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "{}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

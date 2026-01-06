@@ -1,0 +1,1270 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "# TODO: Find git dir; global options"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# TODO: LIBEXECDIR or something"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "GIT_DIR"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameVariable",
+    "value": "GIT_DIR"
+  },
+  {
+    "type": "Keyword",
+    "value": ":-"
+  },
+  {
+    "type": "Punctuation",
+    "value": ".git"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "INDEX_VERSION"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "2"
+  },
+  {
+    "type": "Text",
+    "value": "\n\ngitsort"
+  },
+  {
+    "type": "Operator",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# This will still often be wrong"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "LANG"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": "C sort\n"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# Is it hacky? Hell yes. Is it POSIX? HELL YES."
+  },
+  {
+    "type": "Text",
+    "value": "\nwrite_hex"
+  },
+  {
+    "type": "Operator",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "hex"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "Keyword",
+    "value": "while"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "["
+  },
+  {
+    "type": "Text",
+    "value": " -n "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$hex"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "Keyword",
+    "value": "do"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "cur"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"%s\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$hex"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": " cut -c1-2"
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "next"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"%s\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$hex"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": " cut -c3-"
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\\\x"
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"%s\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$cur"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "hex"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$next"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "Keyword",
+    "value": "done"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# Prints an integer to stdout in binary, big-endian"
+  },
+  {
+    "type": "Text",
+    "value": "\nwrite_int32"
+  },
+  {
+    "type": "Operator",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "n"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "hex"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"%08X\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\twrite_hex "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$hex"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\nwrite_int16"
+  },
+  {
+    "type": "Operator",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "n"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "hex"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"%04X\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\twrite_hex "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$hex"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\nread_text"
+  },
+  {
+    "type": "Operator",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "path"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "offs"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$2"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "len"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$3"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "Keyword",
+    "value": "for"
+  },
+  {
+    "type": "Text",
+    "value": " oct in "
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "Text",
+    "value": "od -An -txC -N"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$len"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " -j"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$offs"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$index"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "Keyword",
+    "value": "do"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "printf"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\\x"
+  },
+  {
+    "type": "NameVariable",
+    "value": "$oct"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "Keyword",
+    "value": "done"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\nread_int16"
+  },
+  {
+    "type": "Operator",
+    "value": "()"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "path"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "offs"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$2"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i16"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Keyword",
+    "value": "$("
+  },
+  {
+    "type": "Text",
+    "value": "od -An -tdS -j"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$offs"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " -N2 "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$path"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": " tr -d "
+  },
+  {
+    "type": "LiteralStringSingle",
+    "value": "' '"
+  },
+  {
+    "type": "Keyword",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t"
+  },
+  {
+    "type": "NameVariable",
+    "value": "i16"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Keyword",
+    "value": "$(("
+  },
+  {
+    "type": "Operator",
+    "value": "(("
+  },
+  {
+    "type": "Text",
+    "value": "i16>>8"
+  },
+  {
+    "type": "Operator",
+    "value": ")&"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "xff"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "(("
+  },
+  {
+    "type": "Text",
+    "value": "i16"
+  },
+  {
+    "type": "LiteralString",
+    "value": "<<8)&0xff00)))\n\techo \"$i16\"\n)\n\nread_int32() (\n\tpath=\"$1\"\n\toffs=\"$2\"\n\ti32=$(od -An -tdI -j\"$offs\" -N4 \"$path\" | tr -d ' ')\n\ti32=$((((i32>>24)&0xff) |\n\t\t((i32<<8"
+  },
+  {
+    "type": "Operator",
+    "value": ")&"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "xff0000"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "Operator",
+    "value": "(("
+  },
+  {
+    "type": "Text",
+    "value": "i32>>8"
+  },
+  {
+    "type": "Operator",
+    "value": ")&"
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "xff00"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": "\n\t\t"
+  },
+  {
+    "type": "Operator",
+    "value": "(("
+  },
+  {
+    "type": "Text",
+    "value": "i32"
+  },
+  {
+    "type": "LiteralString",
+    "value": "<<24)&0xff000000)))\n\techo \"$i32"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n)\n\nread_hex() (\n\tpath=\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n\toffs=\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$2"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n\tlen=\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$3"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n\tod -An -txC -N\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$len"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" -j\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$offs"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" \""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$path"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" | tr -d ' \\n'\n)\n\nnormalize_path() (\n\tpath=\""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$1"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n\tpath=\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameVariable",
+    "value": "path"
+  },
+  {
+    "type": "Punctuation",
+    "value": "#./"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n\t# TODO: Remove the leading / if fully qualified\n\tif [ \""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "${"
+  },
+  {
+    "type": "NameVariable",
+    "value": "path"
+  },
+  {
+    "type": "Punctuation",
+    "value": "#.git"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" != \""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$path"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" ]\n\tthen\n\t\tprintf '%s' 'Invalid path %s\\n' \""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$path"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n\t\texit 1\n\tfi\n\tprintf \""
+  },
+  {
+    "type": "Operator",
+    "value": "%"
+  },
+  {
+    "type": "Text",
+    "value": "s"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\" \""
+  },
+  {
+    "type": "NameVariable",
+    "value": "$path"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\n)"
+  }
+]

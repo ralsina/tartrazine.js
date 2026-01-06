@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Literal",
+    "value": "@("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Literal",
+    "value": ")"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

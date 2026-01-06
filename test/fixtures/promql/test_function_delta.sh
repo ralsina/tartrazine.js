@@ -1,0 +1,1 @@
+delta(cpu_temp_celsius{host="zeus"}[2h])

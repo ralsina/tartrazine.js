@@ -1,0 +1,22 @@
+[
+  {
+    "type": "NameAttribute",
+    "value": "key"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "value"
+  }
+]

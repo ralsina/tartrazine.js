@@ -1,0 +1,1 @@
+fn func(x: u32) -> None {}

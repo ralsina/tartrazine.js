@@ -1,0 +1,186 @@
+[
+  {
+    "type": "LiteralStringSymbol",
+    "value": ":abc_123"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringSymbol",
+    "value": ":abc_def"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringSymbol",
+    "value": ":α"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordType",
+    "value": "Val"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "LiteralStringSymbol",
+    "value": ":mysymbol"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Comment",
+    "value": "# non-symbols"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "1."
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "Name",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "::"
+  },
+  {
+    "type": "KeywordType",
+    "value": "T"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordType",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": "<:"
+  },
+  {
+    "type": "KeywordType",
+    "value": "T"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordType",
+    "value": "a"
+  },
+  {
+    "type": "Operator",
+    "value": ">:"
+  },
+  {
+    "type": "KeywordType",
+    "value": "T"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "KeywordType",
+    "value": "UInt"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Operator",
+    "value": ":"
+  },
+  {
+    "type": "KeywordType",
+    "value": "UInt"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

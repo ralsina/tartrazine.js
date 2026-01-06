@@ -1,0 +1,38 @@
+[
+  {
+    "type": "NameVariable",
+    "value": "go_gc_duration_seconds"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "NameLabel",
+    "value": "instance"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Punctuation",
+    "value": "\""
+  },
+  {
+    "type": "LiteralString",
+    "value": "localhost:9090"
+  },
+  {
+    "type": "Punctuation",
+    "value": "\"}"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# single comment"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Name",
+    "value": ". "
+  },
+  {
+    "type": "Operator",
+    "value": "<-"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  }
+]

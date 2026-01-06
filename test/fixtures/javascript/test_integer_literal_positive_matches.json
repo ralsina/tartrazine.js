@@ -1,0 +1,30 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test literals that should be tokenized as integer literals.\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "123"
+  },
+  {
+    "type": "NameOther",
+    "value": "n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

@@ -1,0 +1,1 @@
+foo(); #define FOO 0

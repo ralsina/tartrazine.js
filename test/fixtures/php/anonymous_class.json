@@ -1,0 +1,82 @@
+[
+  {
+    "type": "Operator",
+    "value": "<?"
+  },
+  {
+    "type": "NameOther",
+    "value": "php"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "NameVariable",
+    "value": "$containerObject"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "new"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "class"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Error",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Keyword",
+    "value": "public"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "$something"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameFunction",
+    "value": "define*"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameFunction",
+    "value": "foo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": ":key"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameFunction",
+    "value": "bar123?"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringSymbol",
+    "value": "'baz"
+  },
+  {
+    "type": "Punctuation",
+    "value": "))"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "display "
+  },
+  {
+    "type": "NameVariable",
+    "value": "bar123?"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameFunction",
+    "value": "newline"
+  },
+  {
+    "type": "Punctuation",
+    "value": "))"
+  },
+  {
+    "type": "Text",
+    "value": "\n\n"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "NameFunction",
+    "value": "foo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "#"
+  },
+  {
+    "type": "NameVariable",
+    "value": ":bar123?"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringSymbol",
+    "value": "'xyz"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

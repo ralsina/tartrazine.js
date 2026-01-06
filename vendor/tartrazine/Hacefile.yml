@@ -1,0 +1,137 @@
+variables:
+  FLAGS: "-d --error-trace"
+  NAME: "tartrazine"
+
+tasks:
+  build:
+    default: true
+    dependencies:
+      - src
+      - shard.lock
+      - shard.yml
+      - Hacefile.yml
+      - lexers/*xml
+      - styles/*xml
+    outputs:
+      - bin/{{NAME}}
+    commands: |
+      shards build {{FLAGS}}
+
+  get-deps:
+    dependencies:
+      - shard.yml
+    outputs:
+      - shard.lock
+    commands: |
+      shards install
+
+  build-release:
+    phony: true
+    always_run: true
+    commands: |
+      hace build FLAGS="--release"
+
+  install:
+    phony: true
+    always_run: true
+    dependencies:
+      - bin/{{NAME}}
+    commands: |
+      rm ${HOME}/.local/bin/{{NAME}} -f
+      cp bin/{{NAME}} ${HOME}/.local/bin/{{NAME}}
+
+  static:
+    outputs:
+      - bin/{{NAME}}-static-linux-amd64
+      - bin/{{NAME}}-static-linux-arm64
+    commands: |
+      hace clean
+      ./build_static.sh
+
+  test:
+    dependencies:
+      - src
+      - spec
+      - shard.lock
+      - shard.yml
+    commands: |
+      crystal spec -v --error-trace
+    phony: true
+    always_run: true
+
+  lint:
+    dependencies:
+      - src
+      - spec
+      - shard.lock
+      - shard.yml
+    commands: |
+      crystal tool format src/*.cr spec/*.cr
+      ameba --fix
+    always_run: true
+    phony: true
+
+  docs:
+    dependencies:
+      - src
+      - shard.lock
+      - shard.yml
+      - README.md
+    commands: |
+      crystal docs
+    outputs:
+      - docs/index.html
+
+  pre-commit:
+    default: true
+    outputs:
+      - .git/hooks/commit-msg
+      - .git/hooks/pre-commit
+    dependencies:
+      - .pre-commit-config.yaml
+    commands: |
+      pre-commit install --hook-type commit-msg
+      pre-commit install
+
+  clean:
+    phony: true
+    always_run: true
+    commands: |
+      rm -rf shard.lock bin lib
+
+  coverage:
+    dependencies:
+      - src
+      - spec
+      - shard.lock
+      - shard.yml
+    commands: |
+      shards install
+      crystal build -o bin/run_tests src/run_tests.cr
+      rm -rf coverage/
+      mkdir coverage
+      kcov --clean --include-path=./src ${PWD}/coverage ./bin/run_tests
+    outputs:
+      - coverage/index.html
+
+  loc:
+    phony: true
+    always_run: true
+    dependencies:
+      - src
+    commands: |
+      tokei src -e src/constants/
+
+  aur:
+    phony: true
+    always_run: true
+    commands: |
+      rm -rf aur-{{NAME}}
+      git clone ssh://aur@aur.archlinux.org/{{NAME}}.git aur-{{NAME}}
+      sed s/pkgver=.*/pkgver=$(shards version)/ -i aur-{{NAME}}/PKGBUILD
+      sed s/pkgrel=.*/pkgrel=1/ -i aur-{{NAME}}/PKGBUILD
+      cd aur-{{NAME}} && updpkgsums && makepkg --printsrcinfo > .SRCINFO
+      cd aur-{{NAME}} && makepkg -fsr
+      cd aur-{{NAME}} && git add PKGBUILD .SRCINFO
+      cd aur-{{NAME}} && git commit -a -m "Update to $(shards version)"
+      cd aur-{{NAME}} && git push

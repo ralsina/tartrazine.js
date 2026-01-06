@@ -1,0 +1,82 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test text that should **not** be tokenized as octal literals.\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "01"
+  },
+  {
+    "type": "NameOther",
+    "value": "N"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "089"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "098"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "o"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "OO"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "o88"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "NameOther",
+    "value": "O88n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

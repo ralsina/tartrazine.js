@@ -1,0 +1,22 @@
+[
+  {
+    "type": "Name",
+    "value": "'x"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "OperatorWord",
+    "value": "':"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "'[]"
+  }
+]

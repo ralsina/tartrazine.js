@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Operator",
+    "value": "#!/"
+  },
+  {
+    "type": "Name",
+    "value": "usr"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "Name",
+    "value": "bin"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "Name",
+    "value": "scala"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "type": "NameLabel",
+    "value": "print_brick_no_color:"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "NameFunction",
+    "value": "inc"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "bx"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "NameFunction",
+    "value": "mov"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "di"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "bx"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "; comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "NameFunction",
+    "value": "jmp"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "ch"
+  },
+  {
+    "type": "NameVariable",
+    "value": "eck_col"
+  }
+]

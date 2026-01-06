@@ -1,0 +1,54 @@
+[
+  {
+    "type": "Punctuation",
+    "value": "<"
+  },
+  {
+    "type": "NameTag",
+    "value": "button"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "NameAttribute",
+    "value": "aria"
+  },
+  {
+    "type": "Error",
+    "value": "-"
+  },
+  {
+    "type": "NameAttribute",
+    "value": "label"
+  },
+  {
+    "type": "Operator",
+    "value": "="
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"Submit\""
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  },
+  {
+    "type": "NameOther",
+    "value": "Submit"
+  },
+  {
+    "type": "Punctuation",
+    "value": "</"
+  },
+  {
+    "type": "NameTag",
+    "value": "button"
+  },
+  {
+    "type": "Punctuation",
+    "value": ">"
+  }
+]

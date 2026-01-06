@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Keyword",
+    "value": "yang-version"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "1.1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ";"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "type": "Keyword",
+    "value": "def"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": ":"
+  },
+  {
+    "type": "KeywordType",
+    "value": ":"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "KeywordType",
+    "value": "xs:"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "List"
+  },
+  {
+    "type": "Operator",
+    "value": "["
+  },
+  {
+    "type": "KeywordType",
+    "value": "T"
+  },
+  {
+    "type": "Operator",
+    "value": "])"
+  },
+  {
+    "type": "Keyword",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "List"
+  },
+  {
+    "type": "Operator",
+    "value": "["
+  },
+  {
+    "type": "KeywordType",
+    "value": "T"
+  },
+  {
+    "type": "Operator",
+    "value": "]"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": ":"
+  },
+  {
+    "type": "KeywordType",
+    "value": ":"
+  },
+  {
+    "type": "Operator",
+    "value": "("
+  },
+  {
+    "type": "KeywordType",
+    "value": "x"
+  },
+  {
+    "type": "Operator",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "xs"
+  },
+  {
+    "type": "Operator",
+    "value": ")"
+  }
+]

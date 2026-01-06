@@ -1,0 +1,66 @@
+[
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".3"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".1"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".1e4"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "-3"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".1E-4"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".2e+4"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "NameOther",
+    "value": "message"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\"\"multiline strings\n            can be followed by\"\"\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# comments"
+  }
+]

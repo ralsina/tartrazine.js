@@ -1,0 +1,1 @@
+[ foo . bar ] # whitespace allowed in table headers

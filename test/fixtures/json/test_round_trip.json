@@ -1,0 +1,54 @@
+[
+  {
+    "type": "Error",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\""
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Error",
+    "value": "a"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Error",
+    "value": "b"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"\""
+  },
+  {
+    "type": "Error",
+    "value": "/-"
+  }
+]

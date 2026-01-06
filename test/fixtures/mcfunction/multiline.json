@@ -1,0 +1,354 @@
+[
+  {
+    "type": "NameBuiltin",
+    "value": "execute"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "as"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@a"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                               "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# For each \"player\","
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "at"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@s"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                               "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# start at their feet."
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "anchored"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "eyes"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                       "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# Looking through their eyes,"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "facing"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                        "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# face perfectly at the target"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "anchored"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "feet"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                       "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# (go back to the feet)"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "positioned"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "^"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "^"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "^"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "1"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                   "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# and move one block forward."
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "rotated"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "as"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@s"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                       "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# Face the direction the player"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                                           "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# is actually facing,"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "positioned"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "^"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "^"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "^"
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "-1"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "                  "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# and move one block back."
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "if"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "entity"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameVariable",
+    "value": "@s"
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "NameAttribute",
+    "value": "distance"
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Literal",
+    "value": ".."
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "0.6"
+  },
+  {
+    "type": "Punctuation",
+    "value": "]"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "        "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# Check if we're close to the"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n                                           "
+  },
+  {
+    "type": "CommentSingle",
+    "value": "# player's feet."
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n    "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "run"
+  },
+  {
+    "type": "NameBuiltin",
+    "value": "\n        say"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"I'm facing the target!\""
+  }
+]

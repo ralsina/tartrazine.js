@@ -1,0 +1,18 @@
+[
+  {
+    "type": "NameClass",
+    "value": "@PREAMBLE"
+  },
+  {
+    "type": "Punctuation",
+    "value": "{"
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"% some LaTeX code here\""
+  },
+  {
+    "type": "Punctuation",
+    "value": "}"
+  }
+]

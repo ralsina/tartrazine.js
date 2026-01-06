@@ -1,0 +1,14 @@
+[
+  {
+    "type": "NameAttribute",
+    "value": "$INCLUDE"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameClass",
+    "value": "test.zone"
+  }
+]

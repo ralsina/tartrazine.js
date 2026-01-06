@@ -1,0 +1,30 @@
+[
+  {
+    "type": "NameOther",
+    "value": "foo"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordConstant",
+    "value": "true"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Comment",
+    "value": "# comment used to prevent bool from being recognized"
+  }
+]

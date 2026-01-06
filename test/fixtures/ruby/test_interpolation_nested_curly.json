@@ -1,0 +1,194 @@
+[
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"A"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "#{"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "3"
+  },
+  {
+    "type": "Operator",
+    "value": ".."
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "5"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Name",
+    "value": "group_by"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "{"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "x"
+  },
+  {
+    "type": "Operator",
+    "value": "/"
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Name",
+    "value": "map"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "do"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Name",
+    "value": "k"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Name",
+    "value": "v"
+  },
+  {
+    "type": "Operator",
+    "value": "|"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "#{"
+  },
+  {
+    "type": "Name",
+    "value": "k"
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  },
+  {
+    "type": "Operator",
+    "value": "."
+  },
+  {
+    "type": "Name",
+    "value": "join"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringInterpol",
+    "value": "}"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\""
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "+"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"Z\""
+  }
+]

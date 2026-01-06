@@ -1,0 +1,26 @@
+[
+  {
+    "type": "CommentSingle",
+    "value": "// Test literals that should be tokenized as binary literals.\n"
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "0b01"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "LiteralNumberBin",
+    "value": "0B10"
+  },
+  {
+    "type": "NameOther",
+    "value": "n"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

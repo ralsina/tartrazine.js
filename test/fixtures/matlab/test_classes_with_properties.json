@@ -1,0 +1,314 @@
+[
+  {
+    "type": "Keyword",
+    "value": "classdef"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "Name"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Operator",
+    "value": "<"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "dynamicprops"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "properties"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Comment",
+    "value": "% i am a comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Name",
+    "value": "name1"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Name",
+    "value": "name2"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "properties"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "Name",
+    "value": "Constant"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "true"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "SetAccess"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "protected"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Comment",
+    "value": "% i too am a comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Name",
+    "value": "matrix"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "["
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "0"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberInteger",
+    "value": "2"
+  },
+  {
+    "type": "Punctuation",
+    "value": "];"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Name",
+    "value": "string"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "'i am a string'"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "methods"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Comment",
+    "value": "% i am also a comment"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "        function"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "Text",
+    "value": "self "
+  },
+  {
+    "type": "Punctuation",
+    "value": "="
+  },
+  {
+    "type": "TextWhitespace",
+    "value": " "
+  },
+  {
+    "type": "NameFunction",
+    "value": "Name"
+  },
+  {
+    "type": "Punctuation",
+    "value": "()"
+  },
+  {
+    "type": "TextWhitespace",
+    "value": "\n            "
+  },
+  {
+    "type": "Comment",
+    "value": "% i am a comment inside a constructor"
+  },
+  {
+    "type": "Text",
+    "value": "\n        "
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  },
+  {
+    "type": "Text",
+    "value": "\n    "
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  },
+  {
+    "type": "Keyword",
+    "value": "end"
+  }
+]

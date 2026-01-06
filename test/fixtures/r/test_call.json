@@ -1,0 +1,30 @@
+[
+  {
+    "type": "NameFunction",
+    "value": "f"
+  },
+  {
+    "type": "Punctuation",
+    "value": "("
+  },
+  {
+    "type": "LiteralNumber",
+    "value": "1"
+  },
+  {
+    "type": "Punctuation",
+    "value": ","
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "Name",
+    "value": "a"
+  },
+  {
+    "type": "Punctuation",
+    "value": ")"
+  }
+]

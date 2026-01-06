@@ -1,0 +1,1 @@
+[table.header.with.some."strings".and."escape\nsequences\u263a"]

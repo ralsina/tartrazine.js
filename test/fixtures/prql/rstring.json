@@ -1,0 +1,10 @@
+[
+  {
+    "type": "LiteralStringAffix",
+    "value": "r"
+  },
+  {
+    "type": "LiteralStringDouble",
+    "value": "\"Not \\n escaped\""
+  }
+]

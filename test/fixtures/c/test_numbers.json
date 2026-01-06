@@ -1,0 +1,66 @@
+[
+  {
+    "type": "LiteralNumberInteger",
+    "value": "42"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "23.42"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "23."
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": ".42"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberOct",
+    "value": "023"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberHex",
+    "value": "0xdeadbeef"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "23e+42"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralNumberFloat",
+    "value": "42e-23"
+  },
+  {
+    "type": "Text",
+    "value": "\n"
+  }
+]

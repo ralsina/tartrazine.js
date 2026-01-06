@@ -1,0 +1,62 @@
+[
+  {
+    "type": "KeywordReserved",
+    "value": "name"
+  },
+  {
+    "type": "Text",
+    "value": "space "
+  },
+  {
+    "type": "KeywordType",
+    "value": "Foobar"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "link"
+  },
+  {
+    "type": "Text",
+    "value": "s "
+  },
+  {
+    "type": "OperatorWord",
+    "value": ":"
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "KeywordType",
+    "value": "String"
+  },
+  {
+    "type": "Text",
+    "value": "\n  "
+  },
+  {
+    "type": "KeywordReserved",
+    "value": "link"
+  },
+  {
+    "type": "Text",
+    "value": "s "
+  },
+  {
+    "type": "OperatorWord",
+    "value": "="
+  },
+  {
+    "type": "Text",
+    "value": " "
+  },
+  {
+    "type": "LiteralString",
+    "value": "\"abc\""
+  }
+]

@@ -1,0 +1,1 @@
+@constant.splat.i1 = constant <vscale x 1 x i1> splat (i1 true)
