@@ -7,7 +7,6 @@
 export { Lexer } from './lexer.js';
 export { HtmlFormatter } from './html-formatter.js';
 export { loadLexer } from './lexer-loader.js';
-export { loadTheme } from './theme-loader.js';
 export { getTokenAbbreviation } from './token-abbreviations.js';
 
 // Simple API (convenience function)

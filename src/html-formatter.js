@@ -1,4 +1,3 @@
-import { loadTheme } from './theme-loader.js';
 import { getTokenAbbreviation } from './token-abbreviations.js';
 
 /**
@@ -6,9 +5,6 @@ import { getTokenAbbreviation } from './token-abbreviations.js';
  */
 export class HtmlFormatter {
   constructor(options = {}) {
-    this.themeName = options.theme || 'github-dark';
-    // If theme is already loaded (object), use it, otherwise undefined (will load on demand)
-    this.theme = typeof options.theme === 'object' ? options.theme : null;
     this.classPrefix = options.classPrefix || '';
     this.lineNumbers = options.lineNumbers || false;
     this.linkableLineNumbers = options.linkableLineNumbers !== false;
@@ -18,18 +14,7 @@ export class HtmlFormatter {
     this.standalone = options.standalone || false;
     this.surroundingPre = options.surroundingPre !== false;
     this.wrapLongLines = options.wrapLongLines || false;
-    this.weightOfBold = options.weightOfBold || 600;
     this.template = options.template || this.getDefaultTemplate();
-  }
-
-  /**
-   * Initialize the formatter (lazy load theme if needed)
-   * @returns {Promise<void>}
-   */
-  async init() {
-    if (!this.theme && this.themeName) {
-      this.theme = await loadTheme(this.themeName);
-    }
   }
 
   /**
@@ -39,8 +24,6 @@ export class HtmlFormatter {
    * @returns {Promise<string>} HTML output
    */
   async format(code, tokens) {
-    // Ensure theme is loaded
-    await this.init();
     let output = '';
     let pre = '';
     let post = '';
@@ -126,21 +109,6 @@ export class HtmlFormatter {
    * @returns {string} CSS class name
    */
   getCssClass(tokenType) {
-    // If theme doesn't have a style for this token, find parent that does
-    if (!this.theme.styles[tokenType]) {
-      const parents = this.theme.styleParents[tokenType] || [];
-      for (const parent of parents) {
-        if (this.theme.styles[parent]) {
-          this.theme.styles[tokenType] = this.theme.styles[parent];
-          break;
-        }
-      }
-      // Default to Background style if nothing found
-      if (!this.theme.styles[tokenType]) {
-        this.theme.styles[tokenType] = this.theme.styles['Background'] || {};
-      }
-    }
-
     const abbrev = getTokenAbbreviation(tokenType);
     return this.classPrefix + abbrev;
   }
@@ -157,57 +125,6 @@ export class HtmlFormatter {
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#039;');
-  }
-
-  /**
-   * Generate CSS styles from the theme
-   * @returns {string} CSS output
-   */
-  generateCss() {
-    let css = '';
-
-    for (const [tokenType, style] of Object.entries(this.theme.styles)) {
-      const className = this.getCssClass(tokenType);
-      css += `.${className} {`;
-
-      if (style.color) {
-        const color = style.color.startsWith('#') ? style.color : `#${style.color}`;
-        css += `color: ${color};`;
-      }
-      if (style.background) {
-        const bg = style.background.startsWith('#') ? style.background : `#${style.background}`;
-        css += `background-color: ${bg};`;
-      }
-      if (style.border) {
-        const border = style.border.startsWith('#') ? style.border : `#${style.border}`;
-        css += `border: 1px solid ${border};`;
-      }
-      if (style.border === false) {
-        css += 'border: none;';
-      }
-      if (style.bold) {
-        css += `font-weight: ${this.weightOfBold};`;
-      }
-      if (style.italic) {
-        css += 'font-style: italic;';
-      }
-      if (style.italic === false) {
-        css += 'font-style: normal;';
-      }
-      if (style.underline) {
-        css += 'text-decoration: underline;';
-      }
-      if (style.underline === false) {
-        css += 'text-decoration: none;';
-      }
-      if (tokenType === 'Background') {
-        css += `tab-size: ${this.tabWidth};`;
-      }
-
-      css += '}';
-    }
-
-    return css;
   }
 
   /**
