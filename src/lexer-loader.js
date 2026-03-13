@@ -87,7 +87,7 @@ export async function loadLexer(lexerName) {
     /<bygroups>([\s\S]*?)<\/bygroups>/g,
     (match, content) => {
       let order = 0;
-      const ordered = content.replace(/<(usingself|using|token)([^>]*)>/g, (m, tagName, attrs) => {
+      const ordered = content.replace(/<(usingself|using|token|UsingByGroup)([^>]*)>/g, (m, tagName, attrs) => {
         return `<${tagName} _order="${order++}"${attrs}>`;
       });
       return `<bygroups>${ordered}</bygroups>`;
@@ -231,6 +231,9 @@ function parseRules(rules) {
       // Extract using elements
       const usings = Array.isArray(rule.bygroups.using) ? rule.bygroups.using : (rule.bygroups.using ? [rule.bygroups.using] : []);
 
+      // Extract UsingByGroup elements
+      const usingByGroups = Array.isArray(rule.bygroups.UsingByGroup) ? rule.bygroups.UsingByGroup : (rule.bygroups.UsingByGroup ? [rule.bygroups.UsingByGroup] : []);
+
       // Use the _order attribute added during preprocessing to preserve original order
       // Collect all groups and sort by _order
       const allGroups = [];
@@ -248,6 +251,11 @@ function parseRules(rules) {
       // Add using elements
       for (const using of usings) {
         allGroups.push({ ...using, _kind: 'using' });
+      }
+
+      // Add UsingByGroup elements
+      for (const usingByGroup of usingByGroups) {
+        allGroups.push({ ...usingByGroup, _kind: 'usingbygroup' });
       }
 
       // Sort by _order attribute
@@ -273,6 +281,12 @@ function parseRules(rules) {
           groups.push({
             type: 'using',
             lexer: item.lexer,
+          });
+        } else if (item._kind === 'usingbygroup') {
+          groups.push({
+            type: 'usingbygroup',
+            lexerIndex: parseInt(item.lexer, 10),
+            contentIndex: item.content ? item.content.split(',').map(s => parseInt(s.trim(), 10)) : [],
           });
         }
       }

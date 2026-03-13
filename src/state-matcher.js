@@ -324,6 +324,31 @@ export class StateMatcher {
                 await lexer.init();
                 const usingTokens = await lexer.tokenize(match[groupIndex]);
                 tokens.push(...usingTokens);
+              } else if (groupAction.type === 'usingbygroup') {
+                // Shunt to a lexer specified by a capture group
+                // Get the lexer name from the specified capture group
+                const lexerName = match[groupAction.lexerIndex];
+                if (lexerName) {
+                  // Get the content by concatenating the specified capture groups
+                  const content = groupAction.contentIndex.map(idx => match[idx] || '').join('');
+
+                  if (content) {
+                    try {
+                      // Normalize lexer name to lowercase
+                      const lexer = new Lexer(String(lexerName).toLowerCase());
+                      await lexer.init();
+                      const usingTokens = await lexer.tokenize(content);
+                      tokens.push(...usingTokens);
+                    } catch (error) {
+                      // Fallback to 'text' lexer if the specified lexer is not found
+                      console.warn(`Lexer '${lexerName}' not found, falling back to 'text'`);
+                      const textLexer = new Lexer('text');
+                      await textLexer.init();
+                      const textTokens = await textLexer.tokenize(content);
+                      tokens.push(...textTokens);
+                    }
+                  }
+                }
               } else if (groupAction.type === 'token') {
                 tokens.push({
                   type: groupAction.tokenType,
