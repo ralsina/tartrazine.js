@@ -21,10 +21,7 @@ export default {
       format: 'umd',
       name: 'Tartrazine',
       sourcemap: true,
-      exports: 'named',
-      globals: {
-        'oniguruma-to-es': 'OnigurumaToES'
-      }
+      exports: 'named'
     },
     // IIFE for browser script tags
     {
@@ -48,11 +45,5 @@ export default {
     }),
     // Convert CommonJS to ESM
     commonjs()
-  ],
-  external: [
-    // Don't bundle these - users provide them
-    // In browser, they'll need to load from CDN
-    'oniguruma-to-es',
-    'fast-xml-parser'
   ]
 };
