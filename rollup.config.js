@@ -44,6 +44,24 @@ export default {
       preferBuiltins: false
     }),
     // Convert CommonJS to ESM
-    commonjs()
+    commonjs(),
+    // Replace fs.readFileSync with fetch for browser
+    {
+      name: 'replace-fs',
+      transform(code, id) {
+        // Only transform in lexer-loader.js
+        if (id.includes('lexer-loader.js')) {
+          // Replace the fs import and readFileSync usage
+          return code.replace(
+            /import { readFileSync } from 'fs';\n\n/,
+            `// fs replaced with fetch for browser\n`
+          ).replace(
+            /return readFileSync\(fullPath, 'utf-8'\);/,
+            `throw new Error('Cannot load local files in browser. Use loadLexer() which uses fetch() instead.');`
+          );
+        }
+        return null;
+      }
+    }
   ]
 };
